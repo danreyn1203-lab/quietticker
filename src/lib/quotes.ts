@@ -175,10 +175,15 @@ export async function getQuote(
   return cached ? { ...cached, stale: true } : null;
 }
 
-/** Force a refresh of every ticker given. Used by the daily cron route. */
+/**
+ * Force a refresh of every ticker given. Used by the daily cron route.
+ * Only genuinely refreshed quotes come back — a ticker whose fetch failed is
+ * left out even though getQuote still serves its cached price, so the caller
+ * can report what actually happened.
+ */
 export async function refreshQuotes(tickers: string[]): Promise<Quote[]> {
   const results = await Promise.all(
     tickers.map((t) => getQuote(t, { force: true })),
   );
-  return results.filter((q): q is Quote => q !== null);
+  return results.filter((q): q is Quote => q !== null && !q.stale);
 }
