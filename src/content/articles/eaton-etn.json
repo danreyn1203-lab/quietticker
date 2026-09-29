@@ -1,0 +1,80 @@
+{
+  "slug": "eaton-etn",
+  "title": "Eaton (ETN)",
+  "headline": "Eaton: a boring industrial quietly powering the AI boom",
+  "standfirst": "Eaton makes the unglamorous power gear that keeps data centers, factories and aircraft running. Strong, consistent, and diversified — my only hang-up is the price. My grade: 7.7–8.3.",
+  "author": "Daniel Reynolds",
+  "publishedAt": "2026-09-25",
+  "asOf": "Prices as of Sep 29, 2026", "updatedAt": "2026-09-29",
+  "tags": ["Industrials", "AI infrastructure", "Dividends"],
+  "tickers": ["ETN"],
+  "summary": "Eaton (ETN) is a diversified power-management industrial riding the AI data-center boom — strong and consistent, but pricey. My honest take and a 7.7–8.3 grade.",
+  "blocks": [
+    {
+      "type": "prose",
+      "md": "I’ll be honest — I had some mixed reviews going in. So: what *is* Eaton, is it worth your money, and will you actually make anything on it? At its core it’s an **energy-efficiency company** — it makes the gear that helps power-hungry things (industrial tools, buildings, and now data centers) run more efficiently, plus reliable systems for aircraft. It’s the definition of a tangible, “boring industry” — and boring industries are exactly what I like to dig into."
+    },
+    {
+      "type": "callout",
+      "label": "My grade",
+      "md": "**7.7 – 8.3.** Strong, consistent, and unusually diversified — I nudged the score up for that. The only thing keeping it out of the top tier for me is the price: it’s *expensive*."
+    },
+    {
+      "type": "heading",
+      "num": "01 / The business",
+      "text": "Consistency is key"
+    },
+    {
+      "type": "prose",
+      "md": "The stock price looks pretty steep and, honestly, I hadn’t heard much about them before. Its 52-week range is fairly average, which tells me it’s **more stable** — the flip side being there’s less room for a big pop if that range tightens. Their products aren’t as pricey as they could be, revenue is strong, and earnings are consistent and predictable. That matters to me: I like to cut out as much risk and uncertainty as I can, because uncertainty is how you fall into analysis paralysis, get biased, and make foolish mistakes. Eaton’s returns are genuinely good and could be attractive to both the *long-haulers* and the *short-pushers*. The charts show consistency, and consistency is key."
+    },
+    {
+      "type": "stats",
+      "items": [
+        { "k": "Price", "v": "$433.11", "s": "steep — Sep 29", "tone": "b" },
+        { "k": "Dividend", "v": "$4.40", "s": "/yr · 1.0% yield" },
+        { "k": "52-wk range", "v": "$312–$478", "s": "fairly stable" },
+        { "k": "Analyst target", "v": "$479.57", "s": "avg · Buy · ~+11%" }
+      ]
+    },
+    {
+      "type": "heading",
+      "num": "02 / Where the money goes",
+      "text": "Spending big — but smart"
+    },
+    {
+      "type": "prose",
+      "md": "They spend a lot, but it’s justified. Eaton has been making intelligent, thoughtful acquisitions (a recent €810M deal, plus a big U.S. manufacturing expansion) and pouring money into the **data-center boom** — including a collaboration with Trane on thermal management for AI facilities. And they haven’t stopped at data centers: they’ve recently expanded into **aerospace and chip-cooling liquids** too. During this AI boom that can make the stock fluctuate a lot, but it also means they’re not a one-trick pony."
+    },
+    {
+      "type": "heading",
+      "num": "03 / My call",
+      "text": "High potential — but am I too late?"
+    },
+    {
+      "type": "prose",
+      "md": "This is a stock I think has real high-potential — I just don’t know if I’m too late, because it’s *so* expensive. Personally, I prefer buying at a cheaper price, where there’s a higher ceiling, and I honestly don’t know how much more business they can realistically add from here."
+    },
+    {
+      "type": "table",
+      "columns": ["The bull (pros)", "The bear (cons)"],
+      "rows": [
+        [{ "v": "Pivotal position in the AI data-center boom, making extensive money.", "tone": "pos" }, { "v": "A little more expensive than it should be — I like a cheaper entry.", "tone": "neg" }],
+        [{ "v": "Genuinely diversified — aerospace, cooling, circuit boards, surge protection — so it’s not all-in on AI.", "tone": "pos" }, { "v": "AI-boom exposure means it can swing a lot.", "tone": "neg" }],
+        [{ "v": "That diversification is a real hedge if the hyper-inflation worries (à la Buffett) play out.", "tone": "pos" }, { "v": "Hard to say how much more business it can add from an already-high base.", "tone": "neg" }]
+      ],
+      "note": "The diversification is exactly why I bumped my grade a little higher despite the price."
+    },
+    {
+      "type": "verdict",
+      "kicker": "My take",
+      "heading": "A quality compounder — I’d just want a better price",
+      "md": "Eaton is a strong, consistent, genuinely diversified industrial that’s right in the middle of the AI data-center buildout. If it weren’t so expensive it’d score higher for me. **My grade: 7.7–8.3** — a great business I’m watching for a better entry, not chasing at the top."
+    }
+  ],
+  "sources": [
+    { "publisher": "stockanalysis.com", "title": "ETN — price, dividend, analyst target", "url": "https://stockanalysis.com/stocks/etn/", "note": "$433.11, $4.40/yr, Buy, target $479.57 (Sep 29, 2026)" },
+    { "publisher": "Eaton", "title": "Investor relations — results, acquisitions, guidance", "url": "https://www.eaton.com/us/en-us/company/investor-relations.html", "note": "COL Group deal, Arkansas expansion, data-center/aerospace" }
+  ],
+  "disclaimer": "Independent, educational research and my own opinions — not investment advice. My grade is my own judgment, not a prediction of returns. Figures as of Sep 25, 2026 and can change — verify against Eaton’s investor-relations page and do your own research."
+}

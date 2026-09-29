@@ -1,0 +1,201 @@
+{
+  "slug": "colgate-cl",
+  "title": "Colgate-Palmolive (CL)",
+  "headline": "Colgate-Palmolive: the ultra-boring dividend payer you already use every day",
+  "standfirst": "You brush your teeth with this company. It has paid a dividend every single year since 1895 and owns ~41% of the world's toothpaste. It's boring, it's not cheap — and that steadiness is exactly the point.",
+  "author": "Daniel Reynolds",
+  "publishedAt": "2026-09-28",
+  "updatedAt": "2026-09-29",
+  "asOf": "Prices as of Sep 29, 2026",
+  "tags": [
+    "Consumer Staples",
+    "Dividends"
+  ],
+  "tickers": [
+    "CL"
+  ],
+  "summary": "Colgate-Palmolive (CL) has paid an uninterrupted dividend since 1895 and owns ~41% of the world's toothpaste — an ultra-consistent, everyday-products compounder. Boring, steady, and not cheap.",
+  "blocks": [
+    {
+      "type": "prose",
+      "md": "Colgate-Palmolive makes so many of the products we use all the time — toothpaste, soap, dish liquid, pet food — that you've almost certainly given it money this week without thinking about it. That's the whole appeal for me. It's an *ultra-consistent* stock with predictable performance, and I love the tangible side of it: real products, on real shelves, that people buy in good times and bad. Knowing it holds a global **~41% toothpaste share** — that's the kind of quiet dominance I look for. Recently, they've found some good global revenue and have been getting some good money in their pet food."
+    },
+    {
+      "type": "callout",
+      "label": "Why it's on my list",
+      "md": "Colgate has **paid an uninterrupted dividend since 1895** — that's its own wording, straight from the company, and it's about as strong a track record as exists in public markets. Add ~41% of the world's toothpaste and you've got a business that just keeps paying you, through every kind of market. This is a “sleep well at night” holding, not a rocket ship."
+    },
+    {
+      "type": "heading",
+      "num": "01 / The dividend",
+      "text": "Paying shareholders since 1895"
+    },
+    {
+      "type": "prose",
+      "md": "This is the heart of the case. In March 2026 Colgate raised its quarterly dividend to **$0.53 a share** (from $0.52) — that's **$2.12 a year**, a **~2.46% yield** at today's price of about **$86.29**. It's not a huge yield, but it's one of the most *dependable* on the planet: Colgate's own press release notes the company “has paid uninterrupted dividends on its common stock since 1895.” That's 131 years of paying shareholders, straight through two world wars and every recession since."
+    },
+    {
+      "type": "stats",
+      "items": [
+        {
+          "k": "Price",
+          "v": "$86.29",
+          "s": "Sep 29, 2026",
+          "tone": "b"
+        },
+        {
+          "k": "Dividend",
+          "v": "$2.12",
+          "s": "/yr · 2.46% yield"
+        },
+        {
+          "k": "Paying since",
+          "v": "1895",
+          "s": "uninterrupted"
+        },
+        {
+          "k": "Toothpaste share",
+          "v": "41.1%",
+          "s": "global, 2026"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "num": "02 / The moat",
+      "text": "It quietly owns your bathroom"
+    },
+    {
+      "type": "prose",
+      "md": "Brands are Colgate's moat. Its global toothpaste share sits around **41%**, and it leads manual toothbrushes too at about **33%**. That kind of shelf dominance is incredibly hard for a rival to dislodge — people buy the toothpaste they trust, over and over, for decades. That's what turns an everyday product into a dividend machine that's survived two world wars and every recession since."
+    },
+    {
+      "type": "legend",
+      "items": [
+        {
+          "label": "Colgate global market share",
+          "tone": "b"
+        }
+      ]
+    },
+    {
+      "type": "barchart",
+      "title": "Colgate's global market share (2026)",
+      "sub": "Dominant where it counts — the everyday, repeat-purchase categories.",
+      "max": 50,
+      "data": [
+        {
+          "cat": "Toothpaste",
+          "value": 41.1,
+          "label": "41.1%",
+          "tone": "b",
+          "title": "Toothpaste: 41.1% global share (2026 YTD)"
+        },
+        {
+          "cat": "Toothbrushes",
+          "value": 32.6,
+          "label": "32.6%",
+          "tone": "b",
+          "title": "Manual toothbrushes: 32.6% global share"
+        },
+        {
+          "cat": "Europe (paste)",
+          "value": 38.7,
+          "label": "38.7%",
+          "tone": "b",
+          "title": "Europe toothpaste share: 38.7%, an all-time high"
+        }
+      ],
+      "source": "Source: Colgate-Palmolive Q1/Q2 2026 results. These are company-reported figures."
+    },
+    {
+      "type": "heading",
+      "num": "03 / The honest catch",
+      "text": "Steady isn't the same as cheap or fast"
+    },
+    {
+      "type": "prose",
+      "md": "I'm not going to pretend it's perfect. Two honest flags. **First, it isn't cheap:** it trades around **34× trailing earnings**, well above what you'd normally pay for a slow-growing staple — though on *forward* earnings (about 22×) it's more reasonable, because analysts expect profits to recover. That gap is an expectation, not a fact. **Second, growth is slow and lumpy:** 2025 earnings actually fell around **26%** on North America headwinds, and the company is now exploring selling some smaller personal-care brands (Softsoap, Irish Spring, Speed Stick). This is a compounder you'd buy for durability and dividends — not for a big pop."
+    },
+    {
+      "type": "barchart",
+      "title": "Valuation: expensive now, cheaper on next year's expected earnings",
+      "sub": "The gap is analysts betting earnings bounce back — an estimate, not a guarantee.",
+      "max": 40,
+      "data": [
+        {
+          "cat": "Trailing P/E",
+          "value": 34.14,
+          "label": "34.1×",
+          "tone": "a",
+          "title": "Trailing P/E: 34.1× — pricey for a staple"
+        },
+        {
+          "cat": "Forward P/E",
+          "value": 22.03,
+          "label": "22.0×",
+          "tone": "b",
+          "title": "Forward P/E: 22.0× — based on analyst estimates"
+        }
+      ],
+      "source": "Source: stockanalysis.com, Sep 29, 2026. Forward P/E relies on estimates that may not pan out."
+    },
+    {
+      "type": "heading",
+      "num": "04 / What could make me wrong",
+      "text": "The risks"
+    },
+    {
+      "type": "risks",
+      "items": [
+        {
+          "title": "You're paying up for safety.",
+          "body": "At ~34× trailing earnings, a lot of the 'reliable' premium is already in the price. If earnings don't recover, the stock can drift."
+        },
+        {
+          "title": "Growth is genuinely slow.",
+          "body": "Staples grow with population and prices, not much more. Don't expect a Meta- or Amphenol-style run here."
+        },
+        {
+          "title": "Currencies + emerging markets.",
+          "body": "A big chunk of sales is overseas, so a strong dollar and weak foreign economies hit reported results."
+        },
+        {
+          "title": "The brand sale could distract.",
+          "body": "Selling off Softsoap/Irish Spring/Speed Stick could sharpen focus — or could go poorly. Worth watching."
+        },
+        {
+          "title": "A long dividend history guarantees nothing.",
+          "body": "131 years of payments is remarkable, but it's a description of the past. Boards can cut dividends, and some famous ones have."
+        }
+      ]
+    },
+    {
+      "type": "verdict",
+      "kicker": "My take",
+      "heading": "A hold-forever staple — for stability, not fireworks",
+      "md": "Colgate is the opposite of my Amphenol bet. You don't buy it to get rich fast; you'd buy it because it has paid a dividend through *every* market since 1895 and you never have to think about it. **My opinion:** if you want a calm, tangible core holding to balance out racier names, this is a strong candidate — just go in knowing it's not cheap and it won't sprint. That's how I'm thinking about it, not a recommendation."
+    }
+  ],
+  "sources": [
+    {
+      "publisher": "stockanalysis.com",
+      "title": "CL — price, P/E, dividend, analyst target",
+      "url": "https://stockanalysis.com/stocks/cl/",
+      "note": "$86.29, $2.12/yr (2.46%), PE 34.14 / fwd 22.03, Buy (21), target $98.80 (Sep 29, 2026)"
+    },
+    {
+      "publisher": "Colgate-Palmolive",
+      "title": "Quarterly dividend increase announcement (Mar 12, 2026)",
+      "url": "https://investor.colgatepalmolive.com/news-releases/news-release-details/colgate-palmolive-announces-quarterly-dividend-increase-and",
+      "note": "$0.53/qtr from $0.52; 'uninterrupted dividends since 1895'"
+    },
+    {
+      "publisher": "Colgate-Palmolive",
+      "title": "Investor relations — quarterly results & market share",
+      "url": "https://investor.colgatepalmolive.com/",
+      "note": "41.1% global toothpaste share, 32.6% toothbrushes"
+    }
+  ],
+  "disclaimer": "Independent, educational research and my own opinions — not investment advice. Dividend history describes the past and does not guarantee future payments; valuation multiples and forward estimates can change. Figures as of Sep 29, 2026 — verify against Colgate's investor-relations page and do your own research."
+}

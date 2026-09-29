@@ -1,0 +1,179 @@
+{
+  "slug": "smtoy-meta-cable",
+  "title": "Meta's Cable Play",
+  "headline": "The deep-sea bet: how I’m playing Meta’s new ocean cable",
+  "standfirst": "Meta is laying a petabit cable across the Atlantic, and one underfollowed Japanese supplier makes the fiber at its core. I put $50 into SMTOY — before the whole world catches on.",
+  "author": "Daniel Reynolds",
+  "publishedAt": "2026-09-25",
+  "asOf": "Prices as of Sep 28, 2026",
+  "tags": [
+    "Undersea cables",
+    "AI infrastructure",
+    "Underfollowed",
+    "Industrials"
+  ],
+  "tickers": [
+    "SMTOY",
+    "META"
+  ],
+  "summary": "Meta’s new petabit 'Petal' subsea cable needs someone to make the fiber — and Sumitomo Electric (SMTOY) does. My $50 deep-sea bet, disclosed.",
+  "blocks": [
+    {
+      "type": "prose",
+      "md": "Here’s a plan most people haven’t heard about yet. Meta is building an ambitious ocean cable connecting **France to the United States** — over **7,000 km** of cable under the Atlantic — that can move **1 petabit per second**, roughly *twice* the capacity of today’s best transoceanic cables. It’s critical for keeping the whole world connected, and it’s perfect for Meta: their social platforms live and die on fast, reliable data.\n\nMeta isn’t building it alone. They’re working with **NEC** and **Sumitomo Electric Industries** — and that second name is the one I care about. Because the best way to bet on a gold rush is usually to sell the shovels."
+    },
+    {
+      "type": "callout",
+      "label": "The play",
+      "md": "**SMTOY — Sumitomo Electric Industries.** It makes the fiber at the core of Meta’s cable. It’s an unglamorous Japanese industrial that quietly builds the thing everyone’s about to need. **I put $50 in.** Small, deliberate, and early — before the whole world knows about this."
+    },
+    {
+      "type": "heading",
+      "num": "01 / The catalyst",
+      "text": "Meta’s “Petal” cable"
+    },
+    {
+      "type": "prose",
+      "md": "The specific project is Meta’s **Petal** cable, announced **September 21, 2026** — the first *petabit-class* transoceanic subsea cable. It runs France to the U.S. (~7,000 km), carries about twice the capacity of today’s best cables without a matching jump in power or hardware, and is targeted to enter service in **2029**. **NEC** handles the overall design and construction of the two-core system, and **Sumitomo Electric provides the two-core fiber** — the literal heart of the cable.\n\n(One thing to keep straight: Meta’s much bigger **“Waterworth”** project — ~50,000 km across five continents — is a *separate* thing. Petal is the France–US petabit cable, and that’s the one Sumitomo is on.)"
+    },
+    {
+      "type": "stats",
+      "items": [
+        {
+          "k": "Cable length",
+          "v": "~7,000 km",
+          "s": "France → U.S."
+        },
+        {
+          "k": "Capacity",
+          "v": "1 Pbps",
+          "s": "~2× today’s best"
+        },
+        {
+          "k": "In service",
+          "v": "2029",
+          "s": "targeted"
+        },
+        {
+          "k": "Sumitomo’s job",
+          "v": "The fiber",
+          "s": "two-core, at the core"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "num": "02 / The pick",
+      "text": "SMTOY — Sumitomo Electric Industries"
+    },
+    {
+      "type": "prose",
+      "md": "Sumitomo Electric is a Japanese company that sells wires, cables, optical fiber, batteries and the attachments that go with them — and it’s the one making the core structure of Meta’s cable. The stock trades around **$6.94** (ADR, late Sep 2026). The dividend is small — about **$0.14 a year, a ~2.04% yield**, paid on a Japanese schedule rather than a steady monthly one — but that’s not why I’m here. This is a bet on the cable.\n\n**Two things you should know before buying.** First, this is a *huge* company — roughly **$43B** market cap — so the Petal cable is one project inside a very large industrial, not a make-or-break contract. Second, the ADR has been wildly volatile: its 52-week range is **$3.50 to $11.14**. That's a stock that has more than tripled off its low within a year. Exciting on the way up, brutal on the way down.\n\n**A buying note:** SMTOY is an over-the-counter ADR you can buy in U.S. dollars during normal hours — that’s the ticker I use. The alternative, **SMTOF**, makes you convert to yen and pay a fee every time you buy or sell. I’ve also seen it said that you get 2 ADR shares per 1 Japanese ordinary share — *I could not verify that ratio from a primary source*, so check it with your broker before you size a position."
+    },
+    {
+      "type": "stats",
+      "items": [
+        {
+          "k": "Price",
+          "v": "$6.94",
+          "s": "ADR · Sep 28, 2026",
+          "tone": "a"
+        },
+        {
+          "k": "52-week range",
+          "v": "$3.50–$11.14",
+          "s": "extremely volatile"
+        },
+        {
+          "k": "Dividend",
+          "v": "~2.04%",
+          "s": "$0.14/yr · not monthly"
+        },
+        {
+          "k": "Market cap",
+          "v": "$43.1B",
+          "s": "big co · cable is small"
+        },
+        {
+          "k": "My position",
+          "v": "$50",
+          "s": "disclosed",
+          "tone": "pos"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "num": "03 / Why I like it",
+      "text": "Sell the shovels, get in early"
+    },
+    {
+      "type": "prose",
+      "md": "This is exactly the kind of pick I look for: an underfollowed industrial that makes a *tangible, critical* piece of a huge project — and that most people will only notice after the cable is already famous. It’s one of the most important companies in Meta’s Petal system, and it’s going to be directly affected by how the project goes. I’d call it a long-term hold, though it could work short-term too depending on your goals.\n\nOne honest flag: you asked me to confirm a Wall Street “moderate buy” rating. I **couldn’t** — the ADR is thinly covered and I found no clear analyst consensus, so I’m not going to claim one. This is a conviction bet on the cable, not on an analyst’s stamp."
+    },
+    {
+      "type": "heading",
+      "num": "04 / What could go wrong",
+      "text": "The risks I’m watching"
+    },
+    {
+      "type": "risks",
+      "items": [
+        {
+          "title": "It’s thin and jumpy.",
+          "body": "SMTOY is a lightly-traded OTC ADR and its 52-week range is $3.50–$11.14 — it has swung more than 3x within a year. Low volume means the price moves hard on small trades. Size accordingly; mine is $50."
+        },
+        {
+          "title": "The timeline is long.",
+          "body": "Petal is targeted for 2029. A lot can change between an announcement and a working cable, and the stock won’t track the project day to day."
+        },
+        {
+          "title": "Currency + coverage.",
+          "body": "The underlying business reports in yen, and there’s little English-language analyst coverage — so you’re working with less information than usual."
+        },
+        {
+          "title": "Sumitomo is big; the cable is small.",
+          "body": "This is one project inside a giant industrial company. The cable is the reason I’m interested, but it won’t move the whole company overnight."
+        },
+        {
+          "title": "No analyst coverage at all.",
+          "body": "Data providers show no analyst rating for this ADR. That means no consensus to sanity-check my thinking against — I'm on my own here, and so are you."
+        }
+      ]
+    },
+    {
+      "type": "verdict",
+      "kicker": "My take",
+      "heading": "A small, early, disclosed bet on the cable",
+      "md": "I’m not betting the farm — I put **$50** in. But I like being early on a tangible, critical supplier to a project this big, before the whole world is talking about it. If Meta’s Petal cable becomes the story I think it will, SMTOY is one of the picks-and-shovels names that quietly benefits. Disclosed, sized small, and in the open. This is the first of the companies I’m watching around Meta’s deep-sea push — more (on the data-center side) coming."
+    }
+  ],
+  "sources": [
+    {
+      "publisher": "Meta (Engineering at Meta)",
+      "title": "Inside Petal: the first petabit-class transoceanic subsea cable",
+      "url": "https://engineering.fb.com/2026/09/21/connectivity/petal-petabit-transoceanic-subsea-cable/",
+      "note": "France–US, ~7,000 km, 2× capacity, 2029, NEC + Sumitomo"
+    },
+    {
+      "publisher": "Meta Newsroom",
+      "title": "Announcing Petal, a first-of-its-kind transoceanic subsea cable",
+      "url": "https://about.fb.com/news/2026/09/announcing-petal-meta-petabit-transoceanic-cable/",
+      "note": "petabit capacity"
+    },
+    {
+      "publisher": "w.media",
+      "title": "Meta, NEC and Sumitomo collaborate to build Petal",
+      "url": "https://w.media/meta-nec-and-sumitomo-collaborate-to-build-petal-submarine-cable-system/",
+      "note": "Sumitomo provides the two-core fiber"
+    },
+    {
+      "publisher": "stockanalysis.com",
+      "title": "SMTOY — Sumitomo Electric Industries ADR",
+      "url": "https://stockanalysis.com/stocks/smtoy/",
+      "note": "price ~$6.82 (Sep 2026)"
+    }
+  ],
+  "disclaimer": "This is independent, educational research and my own opinions — not investment advice. SMTOY is a thinly-covered OTC ADR; price ~$6.82 and it can move fast on little volume. I hold a small $50 position, disclosed here. The Petal cable is targeted for 2029 and plans can change. Figures are as of late Sep 2026 — verify before acting and do your own research.",
+  "updatedAt": "2026-09-29"
+}

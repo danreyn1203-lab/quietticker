@@ -1,0 +1,156 @@
+{
+  "slug": "amphenol-aph",
+  "title": "Amphenol (APH)",
+  "headline": "Amphenol: the data-center pick I’m betting on heavily",
+  "standfirst": "Amphenol makes the connectors, antennas and sensors packed into modern data centers — and the returns are, frankly, ridiculous. It’s one of the highest grades I’ve ever given. My grade: 8.6–9.1.",
+  "author": "Daniel Reynolds",
+  "publishedAt": "2026-09-25",
+  "asOf": "Prices as of Sep 29, 2026",
+  "updatedAt": "2026-09-29",
+  "tags": [
+    "Industrials",
+    "AI infrastructure",
+    "High Growth"
+  ],
+  "tickers": [
+    "APH"
+  ],
+  "summary": "Amphenol (APH) sells the connectors and sensors that fill modern data centers — Strong Buy on the Street, exceptional returns, and one of my highest grades ever (8.6–9.1).",
+  "blocks": [
+    {
+      "type": "prose",
+      "md": "Amphenol is a critical manufacturer and parts distributor that makes serious money selling **connectors, antennas, sensors** and related gear — the kind of stuff packed into modern data centers by the ton. And it’s getting some real love from analysts: it’s rated a **Strong Buy** on the Street. So let’s dive in."
+    },
+    {
+      "type": "callout",
+      "label": "My grade",
+      "md": "**8.6 – 9.1.** This lands in the **top 1%** of stocks I’ve ever graded, and I’m betting on it heavily. It’s well-rounded, it’s growing fast, and — for a company this size and quality — I honestly can’t find a good reason it isn’t *more* expensive."
+    },
+    {
+      "type": "heading",
+      "num": "01 / The numbers",
+      "text": "Doing really well — and not expensive for it"
+    },
+    {
+      "type": "prose",
+      "md": "To be honest, I’d never heard of it before — and it’s absolutely shooting up. It sits near its peak price from a few days ago, but it still isn’t *expensive* for what you get. It just released a dividend of about **$0.125** a quarter, and out of all the multi-billion-dollar companies in this space, the price is ridiculously reasonable. Through 2024 it added just over **$2 billion** in earnings, and it’s been beating its earnings by good amounts. The latest professional rating? A **Strong Buy** (18 analysts), with an average target around **$99.39** — roughly 18% above today’s ~$84."
+    },
+    {
+      "type": "stats",
+      "items": [
+        {
+          "k": "Price",
+          "v": "$84.39",
+          "s": "near 52-wk high",
+          "tone": "b"
+        },
+        {
+          "k": "Dividend",
+          "v": "$0.125",
+          "s": "/qtr · $0.50/yr"
+        },
+        {
+          "k": "Street rating",
+          "v": "Strong Buy",
+          "s": "18 analysts"
+        },
+        {
+          "k": "Analyst target",
+          "v": "$99",
+          "s": "avg · ~+18%"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "num": "02 / The returns",
+      "text": "Ridiculous, frankly"
+    },
+    {
+      "type": "leadin",
+      "md": "This is the part that got my attention. The return rates are ridiculous — this is why it’s in my top 1%."
+    },
+    {
+      "type": "barchart",
+      "title": "Total return (my own figures — unverified)",
+      "sub": "Most of the five-year gain came in the last three. See the caveat below before trusting these.",
+      "max": 380,
+      "data": [
+        {
+          "cat": "1-year",
+          "value": 38.44,
+          "label": "+38.44%",
+          "tone": "b",
+          "title": "1-year total return: +38.44%"
+        },
+        {
+          "cat": "3-year",
+          "value": 313.52,
+          "label": "+313.52%",
+          "tone": "b",
+          "title": "3-year total return: +313.52%"
+        },
+        {
+          "cat": "5-year",
+          "value": 353.95,
+          "label": "+353.95%",
+          "tone": "b",
+          "title": "5-year total return: +353.95%"
+        }
+      ],
+      "source": "⚠️ These three figures come from my own research notes and I could NOT independently verify them against a primary source, so treat them as indicative rather than confirmed. What I can verify: Amphenol's 2025 revenue rose ~52% to $23.1B and earnings ~76% to $4.27B. Past performance is never a forecast."
+    },
+    {
+      "type": "heading",
+      "num": "03 / Why I’m in",
+      "text": "Well-rounded, and picks-and-shovels for AI"
+    },
+    {
+      "type": "prose",
+      "md": "Amphenol is the classic picks-and-shovels play: it doesn’t matter which data-center or AI company wins, they *all* need connectors and sensors, and Amphenol sells them across communications, harsh-environment, and interconnect/sensor segments. Revenue and earnings are both growing fast, the Street is on board, and the price still isn’t stretched for the quality. It’s well-rounded — and I truly can’t find a reason it’s not more expensive. I’m definitely going to recommend this one."
+    },
+    {
+      "type": "heading",
+      "num": "04 / What could make me wrong",
+      "text": "The risks"
+    },
+    {
+      "type": "risks",
+      "items": [
+        {
+          "title": "It’s priced for growth.",
+          "body": "A ~42 P/E means the market already expects a lot. If growth slows, a stock this loved can re-rate quickly."
+        },
+        {
+          "title": "A run this big can’t repeat forever.",
+          "body": "+313% over three years is spectacular — and exactly the kind of number that doesn’t simply continue. I’m sizing with that in mind."
+        },
+        {
+          "title": "It rides the AI cycle.",
+          "body": "So much demand now comes from data centers; a pause in the AI build-out would hit orders."
+        }
+      ]
+    },
+    {
+      "type": "verdict",
+      "kicker": "My take",
+      "heading": "One of my highest grades — and a heavy bet",
+      "md": "Amphenol is well-rounded, fast-growing, Strong-Buy-rated, and *still* not expensive for the quality. It’s a top-1% grade for me and one I’m betting on heavily. **My grade: 8.6–9.1.** The only caution is the obvious one: after a run like this, respect the risk and don’t assume the last three years repeat."
+    }
+  ],
+  "sources": [
+    {
+      "publisher": "stockanalysis.com",
+      "title": "APH — price, dividend, analyst rating",
+      "url": "https://stockanalysis.com/stocks/aph/",
+      "note": "$84.39, $0.125/qtr, Strong Buy (18), target ~$99 (Sep 29, 2026)"
+    },
+    {
+      "publisher": "Amphenol",
+      "title": "Investor relations — results & segments",
+      "url": "https://investors.amphenol.com/",
+      "note": "2025 revenue $23.1B (+52%), earnings $4.27B (+76%)"
+    }
+  ],
+  "disclaimer": "Independent, educational research and my own opinions — not investment advice. My grade is my own judgment, not a prediction of returns; the total-return figures are from my research and past performance does not predict the future. Figures as of Sep 29, 2026 — verify and do your own research."
+}

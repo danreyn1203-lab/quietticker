@@ -1,0 +1,26 @@
+{
+  "eyebrow": "This week’s closest look",
+  "ticker": "SMTOY",
+  "name": "Sumitomo Electric Industries",
+  "exchange": "OTC · ADR",
+  "sector": "Industrials",
+  "industry": "Wire, Cable & Optical Fiber",
+  "price": 6.94,
+  "currency": "USD",
+  "priceNote": "ADR · Sep 28, 2026",
+  "whyWatching": "Sumitomo Electric is a Japanese company that makes wires, cables, optical fiber, batteries and the attachments that go with them — and it’s one of the core suppliers for Meta’s brand-new **Petal** subsea cable, announced September 21, 2026. Petal is the first *petabit-class* transoceanic cable — France to the U.S., roughly **7,000 km**, twice the capacity of today’s best cables — and Sumitomo is providing the **two-core fiber** at the heart of it, with NEC building the system.\n\nThis is exactly the kind of pick I like: an unglamorous industrial that quietly makes the thing everyone’s about to need, *before* the whole world catches on. The dividend is kind of lame and inconsistent — but that’s not why I’m here. This is a bet on the cable, and on being early.",
+  "tags": [
+    "Underfollowed",
+    "Industry Tailwind",
+    "Potential Catalyst",
+    "Industrials"
+  ],
+  "catalystLabel": "The catalyst",
+  "catalyst": "Meta’s **Petal** cable — announced Sep 21, 2026, in service targeted for 2029. First petabit-class transoceanic system; France–US, ~7,000 km, ~2× the capacity of today’s best cables. Sumitomo supplies the two-core fiber. (Meta’s bigger 50,000 km “Waterworth” project is separate.)",
+  "owns": true,
+  "positionNote": "I put $50 in — small, deliberate, and disclosed in the open.",
+  "note": "Buy note: the SMTOY ADR trades in USD at normal hours; the SMTOF line trades in yen with conversion fees, so I hold SMTOY. I've seen it said you get 2 ADR shares per 1 ordinary share — I could not verify that ratio from a primary source, so check with your broker. There is also no analyst coverage of this ADR, so I'm not claiming any rating.",
+  "ctaHref": "/journal",
+  "ctaLabel": "See the research journal",
+  "disclaimer": "Not investment advice. SMTOY is a thinly-covered OTC ADR — its 52-week range is $3.50–$11.14, so it can move violently on low volume. Figures as of late Sep 2026 — verify before acting and do your own research."
+}

@@ -1,0 +1,207 @@
+{
+  "slug": "spyi-vs-jepq",
+  "title": "SPYI vs JEPQ",
+  "headline": "SPYI vs JEPQ: two big monthly dividends, two very different machines",
+  "standfirst": "Both pay you every month. Both sell options to do it. But they're built differently, and the numbers people quote for them usually aren't comparable. Here's the honest side-by-side — and why I stopped trusting the headline yield.",
+  "author": "Daniel Reynolds",
+  "publishedAt": "2026-09-23",
+  "updatedAt": "2026-09-29",
+  "asOf": "Figures as of Sep 29, 2026 unless noted",
+  "tags": ["High income", "ETFs", "Dividends"],
+  "tickers": ["SPYI", "JEPQ"],
+  "summary": "An independent, plain-English comparison of two big monthly-dividend ETFs — how they actually generate income, why their quoted yields aren't comparable, and what the matched-date numbers really show.",
+  "blocks": [
+    {
+      "type": "prose",
+      "md": "I love a big monthly dividend. What I don’t love is putting all my eggs in one basket. So I keep coming back to two funds that pay you *every single month*: **SPYI**, the NEOS S&P 500 High Income ETF, and **JEPQ**, the JPMorgan Nasdaq Equity Premium Income ETF.\n\nThey’re both fairly new — each launched in 2022, so neither has a five-year record yet. And they both sell options to fund those payouts. But when I actually dug into the numbers, I found the comparisons most people make (including the one I made the first time I wrote this) are **not apples to apples**. So let’s do it properly."
+    },
+    {
+      "type": "callout",
+      "label": "How these funds actually pay you",
+      "md": "Both own a basket of stocks *and* sell call options on top. Selling calls brings in cash (“premium”), and that premium funds the big monthly payout. The trade-off is real: **selling calls caps how much you gain in a strong rally**. You’re giving up some upside to buy income. That’s not a free lunch — it’s a swap, and it’s the single most important thing to understand about both funds."
+    },
+    {
+      "type": "heading",
+      "num": "01 / Read this first",
+      "text": "Three different “yields” — and they don’t mean the same thing"
+    },
+    {
+      "type": "prose",
+      "md": "This tripped me up, so I want to save you the confusion. These funds get quoted with three different numbers, and people mix them constantly:\n\n**Distribution rate** — takes the *most recent* monthly payout, multiplies by 12, divides by NAV. It’s a snapshot, and it swings if one month happens to be big.\n\n**12-month trailing yield** — adds up what the fund *actually paid* over the last year. Backward-looking, but much harder to game.\n\n**30-day SEC yield** — a standardized regulatory formula counting dividend and interest income net of expenses. It is *not* a measure of what these funds hand you."
+    },
+    {
+      "type": "leadin",
+      "md": "Want proof that the SEC yield can’t compare these two? As of their latest fact sheets, **SPYI’s 30-day SEC yield was 0.46%** and **JEPQ’s was 15.06%** — yet both paid roughly 11–12% over the past year. The gap is pure plumbing: JEPQ earns much of its option income inside notes whose income the formula counts, while SPYI’s index-option premium largely isn’t captured. Same idea, wildly different number."
+    },
+    {
+      "type": "barchart",
+      "title": "Why you can’t compare these funds on “SEC yield”",
+      "sub": "Two option-income funds paying similar amounts — with 30-day SEC yields 30x apart. The formula is measuring structure, not your paycheck.",
+      "max": 17,
+      "data": [
+        { "cat": "SPYI", "value": 0.46, "label": "0.46%", "tone": "a", "title": "SPYI 30-day SEC yield: 0.46% (NEOS fact sheet, 8/31/2026)" },
+        { "cat": "JEPQ", "value": 15.06, "label": "15.06%", "tone": "b", "title": "JEPQ 30-day SEC yield: 15.06% (JPMorgan fact sheet, 7/31/2026)" }
+      ],
+      "source": "Sources: NEOS SPYI fact sheet (8/31/26) and JPMorgan JEPQ fact sheet (7/31/26). Different as-of dates — shown only to illustrate that this metric isn’t comparable here."
+    },
+    {
+      "type": "heading",
+      "num": "02 / The S&P one",
+      "text": "SPYI — 500 stocks, plus an index call spread"
+    },
+    {
+      "type": "prose",
+      "md": "SPYI holds the constituents of the S&P 500 (511 positions at last look) and runs an options strategy on the **SPX index** — and it’s worth being precise here, because it isn’t a plain covered call. NEOS describes it as a strategy that “may include both sold and purchased SPX index options.” In plain English: they sell calls for premium and buy further-out calls back, which means the upside isn’t capped quite as hard as a simple covered call — but it also costs some of the premium. Upside is still limited in a big rally.\n\nOn the tax side, NEOS notes those SPX options are **Section 1256 contracts**, taxed 60% long-term / 40% short-term regardless of holding period. That can be favorable versus ordinary income — but it depends entirely on your own tax situation, and I’m not a tax adviser."
+    },
+    {
+      "type": "callout",
+      "label": "About “return of capital” — the part people get wrong",
+      "md": "NEOS states SPYI’s distributions “have been classified as a return of capital.” A lot of people online treat ROC as automatically good. **It isn’t automatically anything.** ROC generally isn’t taxed in the year you receive it — instead it *lowers your cost basis*, so you may owe more capital-gains tax when you sell. It can be a genuine tax *deferral*, or it can mean part of the payout is simply your own money coming back. Which one it is depends on the fund’s actual earnings, and you can only tell from the year-end tax forms (Form 8937 / 1099-DIV), not from the monthly headline."
+    },
+    {
+      "type": "stats",
+      "items": [
+        { "k": "Price", "v": "$53.19", "s": "Sep 29, 2026", "tone": "a" },
+        { "k": "12-mo yield", "v": "11.92%", "s": "trailing, incl. all payouts" },
+        { "k": "Expense ratio", "v": "0.68%", "s": "per year" },
+        { "k": "Fund size", "v": "$12.3B", "s": "net assets" },
+        { "k": "Launched", "v": "Aug 2022", "s": "~4 years old" }
+      ]
+    },
+    {
+      "type": "heading",
+      "num": "03 / The Nasdaq one",
+      "text": "JEPQ — active large-caps, plus equity-linked notes"
+    },
+    {
+      "type": "prose",
+      "md": "JEPQ plays the same game on the Nasdaq side, but the machinery is different. It runs an **actively managed** portfolio of large-cap stocks built around the Nasdaq-100 universe (about 110 holdings), and it gets its option income largely through **equity-linked notes (ELNs)** — instruments that package the written call exposure. That’s a real structural difference worth knowing: ELNs introduce **counterparty risk** (you’re relying on the bank on the other side), which a fund trading index options directly doesn’t carry in the same way.\n\nJPMorgan is explicit that the fund “seeks to deliver less volatility than the Nasdaq-100 Index” — and on their own numbers it has: standard deviation of **13.83 vs 20.25** for the index since inception, with a beta of 0.65 (fact sheet, 7/31/2026). That’s JEPQ versus *its own index*, though — not versus SPYI."
+    },
+    {
+      "type": "splitbar",
+      "label": "Where JEPQ’s money sits (JPMorgan fact sheet, 7/31/2026)",
+      "segments": [
+        { "label": "Info Tech 47.7%", "pct": 47.7, "tone": "b" },
+        { "label": "Everything else 52.3%", "pct": 52.3, "tone": "neutral" }
+      ],
+      "caption": "Nearly half in one sector. SPYI tracks the broader S&P 500 (511 holdings), so it’s less concentrated by construction — though its top names are the same mega-cap tech stocks (NVIDIA ~8.2%, Apple ~7.4%, Microsoft ~5.6%). I could not verify SPYI’s official sector breakdown, so I’m not putting a number on it."
+    },
+    {
+      "type": "stats",
+      "items": [
+        { "k": "Price", "v": "$61.15", "s": "Sep 29, 2026", "tone": "b" },
+        { "k": "12-mo yield", "v": "11.06%", "s": "trailing, incl. all payouts" },
+        { "k": "Expense ratio", "v": "0.35%", "s": "per year" },
+        { "k": "Fund size", "v": "$43.9B", "s": "net assets" },
+        { "k": "Launched", "v": "May 2022", "s": "~4 years old" }
+      ]
+    },
+    {
+      "type": "heading",
+      "num": "04 / Side by side",
+      "text": "The honest comparison"
+    },
+    {
+      "type": "leadin",
+      "md": "Everything in this table comes from **one source on one day** (stockanalysis.com, Sep 29, 2026), because mixing sources and dates is exactly how these comparisons go wrong."
+    },
+    {
+      "type": "table",
+      "columns": ["Metric", "SPYI", "JEPQ"],
+      "rows": [
+        [{ "v": "Underlying index" }, { "v": "S&P 500", "tone": "a" }, { "v": "Nasdaq-100 universe", "tone": "b" }],
+        [{ "v": "Option structure" }, { "v": "SPX index call spread", "tone": "a" }, { "v": "ELNs (written calls)", "tone": "b" }],
+        [{ "v": "Management" }, { "v": "Rules/data-driven", "tone": "a" }, { "v": "Actively managed", "tone": "b" }],
+        [{ "v": "Share price" }, { "v": "$53.19", "tone": "a" }, { "v": "$61.15", "tone": "b" }],
+        [{ "v": "12-mo trailing yield" }, { "v": "11.92%", "tone": "a" }, { "v": "11.06%", "tone": "b" }],
+        [{ "v": "Expense ratio" }, { "v": "0.68%", "tone": "a" }, { "v": "0.35%", "tone": "b" }],
+        [{ "v": "Fund size" }, { "v": "$12.3B", "tone": "a" }, { "v": "$43.9B", "tone": "b" }],
+        [{ "v": "1-yr total return" }, { "v": "15.16%", "tone": "a" }, { "v": "19.81%", "tone": "b" }],
+        [{ "v": "Since inception (ann.)" }, { "v": "14.63%", "tone": "a" }, { "v": "16.82%", "tone": "b" }]
+      ],
+      "note": "Since-inception figures cover slightly different periods (JEPQ launched ~4 months earlier), so treat that last row as directional, not a precise head-to-head."
+    },
+    {
+      "type": "heading",
+      "num": "05 / The mistake I made",
+      "text": "Per-share payouts are not yields"
+    },
+    {
+      "type": "prose",
+      "md": "Here’s the correction I most want to flag, because I got it wrong the first time. JEPQ’s recent monthly payout (**$0.68255**) is bigger than SPYI’s (**$0.5423**), and I originally read that as “JEPQ pays more.” **It doesn’t follow.** JEPQ’s shares also cost more ($61.15 vs $53.19), so a bigger per-share cheque doesn’t mean a bigger return on your money.\n\nRun it as a yield and it actually flips: over the trailing twelve months **SPYI paid about 11.92% and JEPQ about 11.06%**. Comparing dollars-per-share across two funds with different share prices is meaningless — always convert to a percentage of what you paid."
+    },
+    {
+      "type": "legend",
+      "items": [
+        { "label": "SPYI", "tone": "a" },
+        { "label": "JEPQ", "tone": "b" }
+      ]
+    },
+    {
+      "type": "barchart",
+      "title": "Trailing 12-month yield — the comparable number",
+      "sub": "What each fund actually paid over the last year, as a percentage of price. Same source, same day.",
+      "max": 14,
+      "data": [
+        { "cat": "SPYI", "value": 11.92, "label": "11.92%", "tone": "a", "title": "SPYI trailing 12-month yield: 11.92%" },
+        { "cat": "JEPQ", "value": 11.06, "label": "11.06%", "tone": "b", "title": "JEPQ trailing 12-month yield: 11.06%" }
+      ],
+      "source": "Source: stockanalysis.com, Sep 29, 2026. Trailing yields reflect the past year only and are not a forecast."
+    },
+    {
+      "type": "barchart",
+      "title": "Total return — same source, same day",
+      "sub": "Income is only half the story; total return counts price change too.",
+      "max": 24,
+      "data": [
+        { "cat": "SPYI 1-yr", "value": 15.16, "label": "15.16%", "tone": "a", "title": "SPYI 1-year total return: 15.16%" },
+        { "cat": "JEPQ 1-yr", "value": 19.81, "label": "19.81%", "tone": "b", "title": "JEPQ 1-year total return: 19.81%" },
+        { "cat": "SPYI since inc.", "value": 14.63, "label": "14.63%", "tone": "a", "sub": true, "title": "SPYI average annual return since inception: 14.63%" },
+        { "cat": "JEPQ since inc.", "value": 16.82, "label": "16.82%", "tone": "b", "sub": true, "title": "JEPQ average annual return since inception: 16.82%" }
+      ],
+      "source": "Source: stockanalysis.com, Sep 29, 2026. Since-inception periods differ slightly. Past performance does not predict future results."
+    },
+    {
+      "type": "heading",
+      "num": "06 / Being straight with you",
+      "text": "What I could not verify"
+    },
+    {
+      "type": "risks",
+      "items": [
+        { "title": "SPYI’s sector breakdown and volatility.", "body": "I couldn’t find an official sector-weight table or standard-deviation figure for SPYI, so I’m not publishing one. I can tell you it holds 511 S&P names and its largest positions are the mega-cap tech stocks." },
+        { "title": "JEPQ’s risk stats are from a different date.", "body": "The 13.83 standard deviation and 0.65 beta come from JPMorgan’s 7/31/2026 fact sheet, and they compare JEPQ to the Nasdaq-100 — not to SPYI. There is no clean SPYI-vs-JEPQ volatility comparison here." },
+        { "title": "Inception dates vary by source.", "body": "NEOS lists SPYI’s inception as 8/29/2022; other data providers show 8/30/2022. Trivial, but it’s the kind of thing that shifts “since inception” math slightly." },
+        { "title": "How much of the payout is return of capital.", "body": "That’s only knowable from year-end tax documents, not the monthly distribution notices. Don’t assume — check the 1099." }
+      ]
+    },
+    {
+      "type": "heading",
+      "num": "07 / The catch",
+      "text": "Risks that apply to both"
+    },
+    {
+      "type": "risks",
+      "items": [
+        { "title": "You are selling away upside.", "body": "In a strong bull market both should trail a plain index fund, because the calls they sold cap the gains. That’s the deal you’re making." },
+        { "title": "A big yield is not a safe yield.", "body": "Distribution rates aren’t guaranteed and change month to month. If markets fall, the share price (NAV) can erode while the payouts keep arriving." },
+        { "title": "Different plumbing, different risks.", "body": "JEPQ’s ELNs carry counterparty risk; SPYI’s index-option approach doesn’t, but it’s more concentrated in a single strategy. Neither is “safer” by default." },
+        { "title": "They’re young.", "body": "Both launched in 2022 — no five-year record, and neither has been through a long, grinding bear market." },
+        { "title": "Tax treatment is personal.", "body": "Section 1256 treatment and return-of-capital effects land differently depending on your situation and account type. Worth asking someone qualified." }
+      ]
+    },
+    {
+      "type": "verdict",
+      "kicker": "How I think about it",
+      "heading": "Different tools, not a scoreboard",
+      "md": "I’m not going to crown a winner here, because they’re genuinely built for different jobs and the right answer depends on what you want. **What the numbers actually say:** over the past year JEPQ delivered the higher *total return* and charges half the fee, while SPYI delivered the slightly higher *trailing payout* and spreads across 500 names instead of concentrating ~48% in tech.\n\n**My opinion, clearly labelled as opinion:** I lean toward the Nasdaq exposure because I like the growth side of the trade, and I think the lower fee matters over time. But I hold that view loosely — SPYI’s broader spread is the better fit for the “don’t put all your eggs in one basket” instinct I started with, and honestly, owning some of each is a perfectly reasonable answer. None of this is a recommendation; it’s how I’m thinking about it, and you should check the primary sources yourself."
+    }
+  ],
+  "sources": [
+    { "publisher": "NEOS Investments", "title": "SPYI fund page & fact sheet", "url": "https://neosfunds.com/spyi/", "note": "distribution rate 12.15%, 12-mo trailing 11.82%, 30-day SEC yield 0.46%, $0.5423 payout, NAV $53.32, 0.68% fee, inception 8/29/2022 (as of 8/31–9/28/2026)" },
+    { "publisher": "stockanalysis.com", "title": "SPYI ETF overview", "url": "https://stockanalysis.com/etf/spyi/", "note": "price $53.19, TTM yield 11.92%, 1-yr return 15.16%, since-inception 14.63% (Sep 29, 2026)" },
+    { "publisher": "J.P. Morgan Asset Management", "title": "JEPQ fact sheet (PDF)", "url": "https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en/literature/fact-sheet/etfs/FS-JEPQ.PDF", "note": "30-day SEC yield 15.06%, 12-mo rolling 10.83%, Info Tech 47.7%, std dev 13.83 vs 20.25, beta 0.65 (7/31/2026)" },
+    { "publisher": "stockanalysis.com", "title": "JEPQ ETF overview", "url": "https://stockanalysis.com/etf/jepq/", "note": "price $61.15, TTM yield 11.06%, 1-yr return 19.81%, since-inception 16.82%, $0.68255 latest payout (Sep 29, 2026)" }
+  ],
+  "disclaimer": "This is independent, educational research and my own opinions — not investment advice, not a recommendation, and not an offer to buy or sell anything. I am not a licensed financial or tax adviser. Yields and distribution rates are not guaranteed and change; covered-call and option-income ETFs can underperform their underlying index and their share price can decline. Return of capital is not automatically a benefit — it generally reduces your cost basis and may increase tax owed on sale. Figures are drawn from the fund providers’ own materials and stockanalysis.com on the dates noted and may since have changed. Verify against the primary sources above and do your own research."
+}

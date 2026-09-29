@@ -1,0 +1,194 @@
+{
+  "companies": [
+    {
+      "ticker": "SMTOY",
+      "name": "Sumitomo Electric Industries",
+      "sector": "Industrials",
+      "note": "Makes the fiber at the core of Meta’s Petal ocean cable. My $50 deep-sea bet.",
+      "tags": ["Undersea Cables", "AI Infrastructure", "Underfollowed", "Industrials"],
+      "articleSlug": "smtoy-meta-cable",
+      "dateResearched": "2026-09-25",
+      "owns": true,
+      "ownsNote": "$50"
+    },
+    {
+      "ticker": "APH",
+      "name": "Amphenol",
+      "sector": "Industrials",
+      "note": "Connectors & sensors for data centers. Strong Buy, top-1% grade — betting heavily.",
+      "tags": ["AI Infrastructure", "Data Centers", "Industrials"],
+      "rating": "8.6–9.1",
+      "articleSlug": "amphenol-aph",
+      "dateResearched": "2026-09-25",
+      "owns": false
+    },
+    {
+      "ticker": "ETN",
+      "name": "Eaton",
+      "sector": "Industrials",
+      "note": "Power gear for the AI boom — strong and diversified, but pricey.",
+      "tags": ["AI Infrastructure", "Data Centers", "Industrials"],
+      "rating": "7.7–8.3",
+      "articleSlug": "eaton-etn",
+      "dateResearched": "2026-09-25",
+      "owns": false
+    },
+    {
+      "ticker": "DUK",
+      "name": "Duke Energy",
+      "sector": "Utilities",
+      "note": "My favorite nuclear-adjacent utility; 7.6 GW of data-center deals, near its 52-wk low.",
+      "tags": ["Nuclear & Utilities", "High Dividend", "Data Centers"],
+      "rating": "8.5",
+      "articleSlug": "nuclear-energy-equities",
+      "dateResearched": "2026-09-24",
+      "owns": false
+    },
+    {
+      "ticker": "PEG",
+      "name": "Public Service Enterprise Group",
+      "sector": "Utilities",
+      "note": "Regulated NJ monopoly, ~4% yield, sitting right at its 52-week low.",
+      "tags": ["Nuclear & Utilities", "High Dividend"],
+      "rating": "7.8",
+      "articleSlug": "nuclear-energy-equities",
+      "dateResearched": "2026-09-24",
+      "owns": false
+    },
+    {
+      "ticker": "JEPQ",
+      "name": "JPMorgan Nasdaq Equity Premium Income ETF",
+      "sector": "ETF · Income",
+      "note": "The big monthly-dividend ETF I’d pick over SPYI.",
+      "tags": ["High Dividend"],
+      "articleSlug": "spyi-vs-jepq",
+      "dateResearched": "2026-09-23",
+      "owns": false
+    },
+    {
+      "ticker": "CL",
+      "name": "Colgate-Palmolive",
+      "sector": "Consumer Staples",
+      "note": "A 64-year Dividend King that owns ~41% of the world’s toothpaste. Boring, steady, not cheap.",
+      "tags": ["Consumer Staples", "Dividends"],
+      "articleSlug": "colgate-cl",
+      "dateResearched": "2026-09-28",
+      "owns": false
+    }
+  ],
+  "journal": [
+    {
+      "date": "2026-09-28",
+      "type": "Published",
+      "ticker": "CL",
+      "title": "Colgate-Palmolive write-up",
+      "summary": "A 64-year Dividend King with ~41% of the world’s toothpaste — my pick for a boring, dependable core holding."
+    },
+    {
+      "date": "2026-09-26",
+      "time": "09:37 ET",
+      "type": "Note",
+      "ticker": "META",
+      "title": "Portfolio reviewed",
+      "summary": "Checked my live holdings — Meta, Amazon, ASML, Micron, SMH, SK Hynix, SCHD, VNQ, FXAIX and SMTOY."
+    },
+    {
+      "date": "2026-09-25",
+      "type": "Rated",
+      "ticker": "APH",
+      "title": "Amphenol graded 8.6–9.1",
+      "summary": "Connectors & sensors for data centers — a top-1% grade, and I’m betting on it heavily."
+    },
+    {
+      "date": "2026-09-25",
+      "type": "Rated",
+      "ticker": "ETN",
+      "title": "Eaton graded 7.7–8.3",
+      "summary": "Strong, diversified industrial in the AI build-out — I’m watching for a cheaper entry."
+    },
+    {
+      "date": "2026-09-25",
+      "type": "Bought",
+      "ticker": "SMTOY",
+      "title": "Opened SMTOY — $50",
+      "summary": "My deep-sea bet on Meta’s Petal cable; Sumitomo makes the two-core fiber. Disclosed."
+    },
+    {
+      "date": "2026-09-24",
+      "type": "Rated",
+      "ticker": "DUK",
+      "title": "Nuclear picks rated",
+      "summary": "Duke 8.5 and PSEG 7.8 are my two buys; NLR the ETF option. Both stocks near 52-week lows."
+    },
+    {
+      "date": "2026-09-23",
+      "type": "Published",
+      "ticker": "JEPQ",
+      "title": "SPYI vs JEPQ",
+      "summary": "Compared two big monthly-dividend ETFs — I’d take JEPQ for the higher return and slightly bigger payout."
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Bought",
+      "ticker": "FXAIX",
+      "title": "Added $100 to FXAIX",
+      "summary": "Put $100 into the Fidelity 500 Index Fund — a simple, cheap core holding."
+    },
+    {
+      "date": "2026-09-15",
+      "type": "Sold",
+      "ticker": "PFE",
+      "title": "Sold all Pfizer",
+      "summary": "Closed the Pfizer position — exited the whole thing."
+    },
+    {
+      "date": "2026-09-01",
+      "type": "Bought",
+      "ticker": "VNQ",
+      "title": "Added VNQ, SCHD and Pfizer",
+      "summary": "$35 into VNQ, $45 into SCHD, and $58 into Pfizer (PFE)."
+    },
+    {
+      "date": "2026-08-27",
+      "type": "Bought",
+      "ticker": "AMZN",
+      "title": "Added to Meta + opened Amazon",
+      "summary": "Added $35 more to Meta and opened Amazon with $40."
+    },
+    {
+      "date": "2026-08-25",
+      "type": "Bought",
+      "ticker": "META",
+      "title": "Bought Meta (META) — then doubled down",
+      "summary": "First Meta buy of $85 — then, to be fully transparent, I doubled down the same day with $20 more. See the “In the open” band for how it’s done since."
+    },
+    {
+      "date": "2026-08-24",
+      "type": "Bought",
+      "ticker": "SMH",
+      "title": "First buys — semis + ASML",
+      "summary": "$110 into SMH, $60 into ASML, $55 into SK Hynix, and $25 into Micron. Leaning into semiconductors."
+    }
+  ],
+  "portfolio": {
+    "asOf": "2026-09-26 09:37 ET",
+    "totalValue": 747.0,
+    "holdingsValue": 572.21,
+    "cash": 174.79,
+    "gainDollar": 24.03,
+    "gainPct": 4.38,
+    "holdings": [
+      { "ticker": "META", "name": "Meta Platforms" },
+      { "ticker": "AMZN", "name": "Amazon" },
+      { "ticker": "ASML", "name": "ASML Holding" },
+      { "ticker": "MU", "name": "Micron Technology" },
+      { "ticker": "SMH", "name": "VanEck Semiconductor ETF" },
+      { "ticker": "SKHY", "name": "SK Hynix (ADR)" },
+      { "ticker": "SCHD", "name": "Schwab U.S. Dividend Equity ETF" },
+      { "ticker": "VNQ", "name": "Vanguard Real Estate ETF" },
+      { "ticker": "FXAIX", "name": "Fidelity 500 Index Fund" },
+      { "ticker": "SMTOY", "name": "Sumitomo Electric Industries", "note": "$50 · bought Sep 25, 2026" }
+    ],
+    "pending": []
+  }
+}

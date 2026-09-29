@@ -1,0 +1,315 @@
+{
+  "slug": "nuclear-energy-equities",
+  "title": "Nuclear Energy Stocks",
+  "headline": "Powering the AI boom: the two energy stocks I’d buy (plus one ETF)",
+  "standfirst": "AI runs 24/7, and it needs clean power that never sleeps — which is why I’m looking at nuclear-heavy utilities. Two stocks clear my bar: Duke (DUK) and PSEG (PEG). Here’s my honest take, plus the one ETF I’d use instead.",
+  "author": "Daniel Reynolds",
+  "publishedAt": "2026-09-24",
+  "asOf": "Prices as of Sep 29, 2026",
+  "updatedAt": "2026-09-29",
+  "tags": [
+    "Nuclear",
+    "Energy",
+    "Utilities",
+    "Dividends"
+  ],
+  "tickers": [
+    "DUK",
+    "PEG",
+    "NLR"
+  ],
+  "summary": "Why I’d buy Duke (DUK) and PSEG (PEG) for the AI-and-nuclear power boom — two consistent utilities near 52-week lows — plus NLR, the ETF I’d use for a basket.",
+  "blocks": [
+    {
+      "type": "prose",
+      "md": "Why energy, you may ask. Because energy is what makes everything else run. AI is being used around the clock now, and all of that computing needs power that never switches off. Nuclear is a much cleaner energy than burning coal, and it’s being relied on more and more every year. So I went looking for the best way to own that — and I like to start with individual stocks, then point you to an ETF that bundles the leaders of the industry.\n\nWhen I’m honest with myself, two utilities clear my bar: **Duke Energy (DUK)** and **Public Service Enterprise Group (PEG)**. Both are regulated utilities with real nuclear exposure, real dividends, and — right now — prices sitting near their 52-week lows."
+    },
+    {
+      "type": "callout",
+      "label": "The bottom line",
+      "md": "**Buy: DUK and PEG.** Duke edges it for me by a hair. Both are consistent, actually-used utilities paying solid dividends at a fair price. **Prefer a basket?** NLR (the VanEck Uranium & Nuclear ETF) holds the leaders — including PEG. **Didn’t make my list:** the URA and URNM uranium ETFs."
+    },
+    {
+      "type": "heading",
+      "text": "My ratings at a glance"
+    },
+    {
+      "type": "leadin",
+      "md": "1–10, my own gut plus the fundamentals. Blue = I’d buy it now, ochre = the ETF, grey = watching."
+    },
+    {
+      "type": "legend",
+      "items": [
+        { "label": "Buy", "tone": "b" },
+        { "label": "ETF", "tone": "a" },
+        { "label": "Watching", "tone": "ref" }
+      ]
+    },
+    {
+      "type": "barchart",
+      "title": "My rating (out of 10)",
+      "sub": "Duke edges it for me; GEV sits at the bottom on price.",
+      "max": 10,
+      "data": [
+        { "cat": "DUK", "value": 8.5, "label": "8.5", "tone": "b", "title": "DUK — 8.5 / 10 (buy)" },
+        { "cat": "PEG", "value": 7.8, "label": "7.8", "tone": "b", "title": "PEG — 7.8 / 10 (buy)" },
+        { "cat": "NLR", "value": 7.0, "label": "7.0", "tone": "a", "title": "NLR — 7.0 / 10 (ETF)" },
+        { "cat": "BWXT", "value": 7.0, "label": "7.0", "tone": "ref", "title": "BWXT — 7.0 / 10 (watching)" },
+        { "cat": "CEG", "value": 6.5, "label": "6.5", "tone": "ref", "title": "CEG — 6.5 / 10 (watching)" },
+        { "cat": "GEV", "value": 4.5, "label": "4.5", "tone": "ref", "title": "GEV — 4.5 / 10 (watching)" }
+      ],
+      "source": "My own ratings — conviction, not a prediction of returns."
+    },
+    {
+      "type": "heading",
+      "num": "01 / Why now",
+      "text": "Data centers need power that never sleeps"
+    },
+    {
+      "type": "prose",
+      "md": "This isn’t hype for hype’s sake. Data-center electricity demand is set to roughly double by 2030, nuclear already supplies about 18% of U.S. power, and it’s one of the only clean sources that runs flat-out 24/7. The utilities that own that generation — and the wires it flows through — are the boring, unglamorous way to own the trend. That’s exactly why I like them: they’re *being used*, not just talked about."
+    },
+    {
+      "type": "heading",
+      "num": "02 / My favorite",
+      "text": "DUK — Duke Energy"
+    },
+    {
+      "type": "prose",
+      "md": "Duke is my favorite of the two, by a little. It’s being leaned on hard for data-center power — it now has **7.6 GW of executed data-center agreements**, with nearly two-thirds already under construction. So it’s not just homes and businesses; it’s the data centers moving into the Southern U.S. too. Its earnings have climbed from about **$2.8B in 2023 to roughly $4.9B in 2025**, and it’s very consistent — honestly, higher-quality metrics than PEG.\n\nThe dividend is genuinely generous: about **$1.08 a quarter ($4.34 a year, a 3.80% yield)**. It’s priced around **$114**, close to its 52-week low of $112.40, and it’s still one of the cheaper names in this group — most nuclear stocks are overhyped and too unpredictable, but Duke actually carries a heavy load of real energy. It has a legal, regulated service monopoly across North Carolina, South Carolina, Florida, Indiana, Ohio and Kentucky (plus a slice of Tennessee), so it’s rooted deep into fast-growing states. As more people keep moving to the sunbelt, I think it only goes up. Analysts agree it’s a Buy, with an average target near **$137 (about +20%)** — though a price target is an opinion, not a promise."
+    },
+    {
+      "type": "stats",
+      "items": [
+        {
+          "k": "Price",
+          "v": "$114.11",
+          "s": "near 52-wk low ($112.40)",
+          "tone": "b"
+        },
+        {
+          "k": "Dividend",
+          "v": "$4.34",
+          "s": "/yr · 3.80% yield"
+        },
+        {
+          "k": "Data-center deals",
+          "v": "7.6 GW",
+          "s": "~⅔ under construction"
+        },
+        {
+          "k": "Analyst target",
+          "v": "$136.94",
+          "s": "avg · ~+20%"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "num": "03 / The value pick",
+      "text": "PEG — Public Service Enterprise Group"
+    },
+    {
+      "type": "prose",
+      "md": "PEG just reported mild Q2 operating-earnings growth ($0.86 a share) and declared a **$0.67 quarterly dividend** — that’s **$2.68 a year, a 3.98% yield**, and it’s about as consistent as they come. My favorite part: it runs a regulated monopoly on the wires and pipes in New Jersey through PSE&G, serving **3.5 million+ customers** — roughly three-quarters of the state’s population. And this isn’t some newly-hyped stock: PSE&G was founded in **1903**, built by combining around 400 transit and energy companies, and it’s the oldest and largest utility in New Jersey. It’s actually *used*.\n\nIt’s also nicely out of debt by a few billion, and it’s cheap versus other utilities at about **$67.37** — sitting just above its 52-week low of $66.15. First-year returns after a run like this usually aren’t exciting, but utilities pay you to be patient, and the steady years tend to come. Analysts have it as a Buy with an average target around **$85.31 (about +27%)** — again, an opinion, not a promise. **My opinion:** after the pullback since ’24, this looks like a good one to snag."
+    },
+    {
+      "type": "stats",
+      "items": [
+        {
+          "k": "Price",
+          "v": "$67.37",
+          "s": "near 52-wk low ($66.15)",
+          "tone": "a"
+        },
+        {
+          "k": "Dividend",
+          "v": "$2.68",
+          "s": "/yr · 3.98% yield"
+        },
+        {
+          "k": "NJ customers",
+          "v": "3.5M+",
+          "s": "~¾ of the state"
+        },
+        {
+          "k": "Founded",
+          "v": "1903",
+          "s": "oldest utility in NJ"
+        }
+      ]
+    },
+    {
+      "type": "legend",
+      "items": [
+        {
+          "label": "PEG",
+          "tone": "a"
+        },
+        {
+          "label": "DUK",
+          "tone": "b"
+        },
+        {
+          "label": "NLR (ETF)",
+          "tone": "ref"
+        }
+      ]
+    },
+    {
+      "type": "barchart",
+      "title": "Dividend yield",
+      "sub": "Both stocks pay you well while you wait — and both are near 52-week lows, which lifts the yield.",
+      "max": 5,
+      "data": [
+        {
+          "cat": "PEG",
+          "value": 3.98,
+          "label": "3.98%",
+          "tone": "a",
+          "title": "PEG — 3.98% dividend yield"
+        },
+        {
+          "cat": "DUK",
+          "value": 3.80,
+          "label": "3.80%",
+          "tone": "b",
+          "title": "DUK — 3.80% dividend yield"
+        },
+        {
+          "cat": "NLR",
+          "value": 3.05,
+          "label": "3.05%",
+          "tone": "ref",
+          "title": "NLR ETF — 3.05% yield"
+        }
+      ],
+      "source": "Source: stockanalysis.com, as of Sep 29, 2026. Yields move with price and are not guaranteed."
+    },
+    {
+      "type": "barchart",
+      "title": "How far below analysts’ average target",
+      "sub": "A rough gauge of how beaten-down these are today — not a promise they’ll get there.",
+      "max": 35,
+      "data": [
+        {
+          "cat": "PEG",
+          "value": 26.6,
+          "label": "+27%",
+          "tone": "a",
+          "title": "PEG: average analyst target $85.31 vs $67.37 (~+27%)"
+        },
+        {
+          "cat": "DUK",
+          "value": 20.0,
+          "label": "+20%",
+          "tone": "b",
+          "title": "DUK: average analyst target $136.94 vs $114.11 (~+20%)"
+        }
+      ],
+      "source": "Source: analyst averages via stockanalysis.com, Sep 29, 2026. Price targets are opinions, not guarantees."
+    },
+    {
+      "type": "heading",
+      "num": "04 / Prefer a basket?",
+      "text": "NLR — the VanEck Uranium & Nuclear ETF"
+    },
+    {
+      "type": "prose",
+      "md": "If you’d rather not pick a single stock, **NLR** bundles the whole theme into one ticker. It’s about **$103.69** — roughly $10 cheaper than Duke — yields **3.05%**, charges 0.52%, and holds 27 names tracking a global uranium-and-nuclear index. Its top holdings are Constellation (8.26%), Cameco (8.09%) and — funny enough — **PEG** (7.45%), one of my two picks. Note it distributes **once a year** (the last one was December 2025), so don’t buy it expecting a monthly cheque.\n\n**And here’s the part I have to be straight about:** NLR is **down about 22% over the past year** (total return, including its distribution). It launched in 2007, so it’s not a new fund — it’s just had a rough stretch as uranium and nuclear names sold off. A basket smooths out single-stock risk; it does *not* protect you from the whole sector falling. If I showed you the yield without that number, I’d be selling you a story."
+    },
+    {
+      "type": "heading",
+      "num": "05 / Also on my radar",
+      "text": "Interesting, but I’m watching — not buying"
+    },
+    {
+      "type": "prose",
+      "md": "**BWXT (BWX Technologies)** is a great business — steady earnings, beating Wall Street’s EPS, a Canadian nuclear-services partnership, and it’s sitting about $50 under its analyst target. The catch is the ~$0.27 dividend (kind of lame) and the volatility, so I like it but I’m not buying here. **CEG (Constellation Energy)** has been completely rocketing to the sky, and it’s buying the Rhode Island State Energy Center from Shell for $715M — interesting, but after a run like that I’m watching. **GEV (GE Vernova)** I’d skip at this price: a ~$950 stock paying about a $0.50 dividend is terrible income, it only just turned profitable, and it’s missed on earnings. Overpriced, mark my words.\n\nAs for the other uranium ETFs — **URA** and **URNM** — I looked at them and they didn’t make my list."
+    },
+    {
+      "type": "heading",
+      "num": "06 / What could make me wrong",
+      "text": "The risks I’m watching"
+    },
+    {
+      "type": "risks",
+      "items": [
+        {
+          "title": "A good story isn’t a good stock.",
+          "body": "Nuclear demand is real, but a lot of it is still announcements, not funded revenue. Prices can run way ahead of the business — which is exactly why I only buy the two."
+        },
+        {
+          "title": "Rates hit the debt-heavy utilities.",
+          "body": "Duke and PEG both carry a lot of debt (normal for utilities). Higher-for-longer interest rates make that debt more expensive even when the business is fine."
+        },
+        {
+          "title": "One incident reprices everything.",
+          "body": "A single nuclear accident anywhere can drag the whole group down at once — even the safe, regulated utilities. Nuclear is political."
+        },
+        {
+          "title": "Analyst targets aren’t guarantees.",
+          "body": "Both stocks sit well below their average price target, but targets are opinions. ‘Below target’ is a reason to look closer, not a promise of gains."
+        }
+      ]
+    },
+    {
+      "type": "verdict",
+      "kicker": "My take",
+      "heading": "Buy the two, use the ETF if you want a basket",
+      "md": "**DUK and PEG** are the two I’d actually buy — consistent, real dividends, near 52-week lows, and genuinely being used to power homes and data centers, not just hyped. **Duke edges it for me.** If you’d rather own the whole theme in one ticker, **NLR** holds the leaders (PEG included). Everything else is a watch, not a buy. The rule that keeps me out of trouble: don’t overpay for a good story."
+    }
+  ],
+  "sources": [
+    {
+      "publisher": "stockanalysis.com",
+      "title": "PEG — price, dividend, analyst target",
+      "url": "https://stockanalysis.com/stocks/peg/",
+      "note": "$67.37, $0.67/qtr, 3.98% yield, target ~$85 (Sep 29, 2026)"
+    },
+    {
+      "publisher": "PSEG",
+      "title": "Investor relations — Q2 2026 results & company facts",
+      "url": "https://investor.pseg.com/",
+      "note": "Q2 operating EPS $0.86; PSE&G NJ utility, founded 1903"
+    },
+    {
+      "publisher": "stockanalysis.com",
+      "title": "DUK — price, dividend, analyst target",
+      "url": "https://stockanalysis.com/stocks/duk/",
+      "note": "$114.11, $4.34/yr, 3.80% yield, target ~$137 (Sep 29, 2026)"
+    },
+    {
+      "publisher": "Duke Energy",
+      "title": "Data-center growth & investor relations",
+      "url": "https://investors.duke-energy.com/",
+      "note": "7.6 GW of executed data-center agreements"
+    },
+    {
+      "publisher": "VanEck / stockanalysis.com",
+      "title": "NLR — Uranium & Nuclear ETF",
+      "url": "https://stockanalysis.com/etf/nlr/",
+      "note": "$106, ~3% yield; holds Cameco, Constellation, PSEG"
+    },
+    {
+      "publisher": "Constellation Energy",
+      "title": "Constellation to acquire Rhode Island State Energy Center from Shell",
+      "url": "https://www.constellationenergy.com/news/2026/09/constellation-to-acquire-rhode-island-state-energy-center-from-shell.html",
+      "note": "$715M deal referenced for CEG"
+    },
+    {
+      "publisher": "Global X",
+      "title": "URA — Uranium ETF (didn’t make my list)",
+      "url": "https://www.globalxetfs.com/funds/ura/",
+      "note": "for reference"
+    },
+    {
+      "publisher": "Sprott",
+      "title": "URNM — Uranium Miners ETF (didn’t make my list)",
+      "url": "https://sprottetfs.com/urnm/",
+      "note": "for reference"
+    }
+  ],
+  "disclaimer": "This is independent, educational research and my own opinions — not personalized investment, legal or tax advice, and not an offer to buy or sell any security. Dividend yields move with price and are not guaranteed; analyst price targets are opinions, not promises. Prices and figures are as of Sep 29, 2026 and can change — verify against each company’s investor-relations page before acting. Utility and nuclear stocks carry interest-rate, regulatory, operational, accident and permanent-loss risk. Always do your own research.",
+  "updatedAt": "2026-09-24"
+}
