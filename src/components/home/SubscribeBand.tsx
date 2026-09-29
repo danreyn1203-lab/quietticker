@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { SubscribeForm } from "@/components/SubscribeForm";
 
@@ -21,7 +22,14 @@ export function SubscribeBand() {
             <SubscribeForm />
             <p className="mt-3 text-xs text-ink-muted">
               Your email is only used to send research updates. Nothing is shared
-              or sold.
+              or sold.{" "}
+              <Link
+                href="/signup"
+                className="font-medium text-ink-soft underline decoration-line-strong underline-offset-2 hover:text-ink"
+              >
+                Want a profile too? Sign up
+              </Link>
+              .
             </p>
           </div>
         </div>

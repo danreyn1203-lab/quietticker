@@ -1,11 +1,10 @@
 /**
  * Central site + brand configuration.
  * Everything a rename would touch lives here — change the name in ONE place.
- * (Working brand name "Throughline" is a placeholder — easy to swap.)
  */
 
 export const site = {
-  name: "Throughline",
+  name: "QuietTicker",
   tagline: "Independent research, in the open.",
   description:
     "Independent, transparent research on companies with interesting growth opportunities, unusual competitive advantages, and potentially overlooked fundamentals.",

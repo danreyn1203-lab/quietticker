@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/site";
+import { getReader } from "@/lib/readerAuth";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 
@@ -59,14 +60,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
+  // Reading the reader cookie here renders pages on demand. That is already
+  // true of every content route (the content is files on disk), and it means
+  // the header knows who you are without a client round-trip.
+  const reader = await getReader();
+
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${sourceSerif.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-paper text-ink">
-        <SiteHeader />
+        <SiteHeader firstName={reader?.firstName ?? null} />
         <main className="flex-1">{children}</main>
         <SiteFooter />
       </body>

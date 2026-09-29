@@ -6,9 +6,10 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/cn";
 import { primaryNav, site } from "@/lib/site";
 import { SearchBox } from "./SearchBox";
+import { AccountChip } from "@/components/account/AccountChip";
 import { Close, Menu } from "@/components/ui/icons";
 
-export function SiteHeader() {
+export function SiteHeader({ firstName }: { firstName: string | null }) {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -54,14 +55,11 @@ export function SiteHeader() {
           <SearchBox />
         </div>
 
-        {/* Profile */}
-        <button
-          type="button"
-          aria-label="Account"
-          className="hidden h-9 w-9 shrink-0 place-items-center rounded-full border border-line-strong bg-surface text-sm font-medium text-ink-soft hover:text-ink md:grid"
-        >
-          {site.author.charAt(0)}
-        </button>
+        {/* Reader account — their own profile, or an invitation to make one.
+            The author signs in at /admin; nothing here points there. */}
+        <div className="hidden shrink-0 md:block">
+          <AccountChip firstName={firstName} />
+        </div>
 
         {/* Mobile toggle */}
         <button
@@ -96,6 +94,9 @@ export function SiteHeader() {
               </Link>
             ))}
           </nav>
+          <div className="mt-3 border-t border-line pt-3">
+            <AccountChip firstName={firstName} />
+          </div>
         </div>
       )}
     </header>

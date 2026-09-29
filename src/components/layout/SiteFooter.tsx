@@ -40,6 +40,7 @@ export function SiteFooter() {
                 ["Methodology", "/methodology"],
                 ["Portfolio", "/portfolio"],
                 ["About", "/about"],
+                ["Sign up", "/signup"],
               ].map(([label, href]) => (
                 <li key={href}>
                   <Link

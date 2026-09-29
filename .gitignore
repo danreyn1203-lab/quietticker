@@ -44,3 +44,7 @@ next-env.d.ts
 # runtime data stores (contain real subscriber emails - never commit)
 /src/content/subscribers.json
 /src/content/broadcasts.json
+/src/content/readers.json
+
+# generated price cache (refetched from Yahoo Finance on demand)
+/src/content/quote-cache.json

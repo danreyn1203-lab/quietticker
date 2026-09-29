@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { cn } from "@/lib/cn";
@@ -10,9 +10,12 @@ type ArticleRef = { slug: string; title: string; headline: string };
 export function AdminClient({
   authed,
   articles,
+  stats,
 }: {
   authed: boolean;
   articles: ArticleRef[];
+  /** Audience panel, rendered on the server and only when signed in. */
+  stats?: ReactNode;
 }) {
   const router = useRouter();
   const [password, setPassword] = useState("");
@@ -99,6 +102,8 @@ export function AdminClient({
           Sign out
         </button>
       </div>
+
+      {stats}
 
       <div className="mt-8 flex items-center justify-between gap-4 rounded-lg border border-line bg-surface p-4">
         <div className="min-w-0">
