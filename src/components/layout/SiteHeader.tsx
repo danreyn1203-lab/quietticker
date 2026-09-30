@@ -9,7 +9,13 @@ import { SearchBox } from "./SearchBox";
 import { AccountChip } from "@/components/account/AccountChip";
 import { Close, Menu } from "@/components/ui/icons";
 
-export function SiteHeader({ firstName }: { firstName: string | null }) {
+export function SiteHeader({
+  firstName,
+  isAuthor,
+}: {
+  firstName: string | null;
+  isAuthor: boolean;
+}) {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -58,7 +64,7 @@ export function SiteHeader({ firstName }: { firstName: string | null }) {
         {/* Reader account — their own profile, or an invitation to make one.
             The author signs in at /admin; nothing here points there. */}
         <div className="hidden shrink-0 md:block">
-          <AccountChip firstName={firstName} />
+          <AccountChip firstName={firstName} isAuthor={isAuthor} />
         </div>
 
         {/* Mobile toggle */}
@@ -95,7 +101,7 @@ export function SiteHeader({ firstName }: { firstName: string | null }) {
             ))}
           </nav>
           <div className="mt-3 border-t border-line pt-3">
-            <AccountChip firstName={firstName} />
+            <AccountChip firstName={firstName} isAuthor={isAuthor} />
           </div>
         </div>
       )}

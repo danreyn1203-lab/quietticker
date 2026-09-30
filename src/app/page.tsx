@@ -1,6 +1,7 @@
 import { Container } from "@/components/layout/Container";
 import { Hero } from "@/components/home/Hero";
 import { OpenTrackRecord } from "@/components/home/OpenTrackRecord";
+import { PortfolioStandouts } from "@/components/home/PortfolioStandouts";
 import { FeaturedSpotlight } from "@/components/home/FeaturedSpotlight";
 import { LatestNotes } from "@/components/home/LatestNotes";
 import { RecentlyResearched } from "@/components/home/RecentlyResearched";
@@ -40,6 +41,7 @@ export default function Home() {
       />
       <Hero />
       <OpenTrackRecord />
+      <PortfolioStandouts />
       <Container className="space-y-20 py-16 sm:py-20">
         <FeaturedSpotlight />
         <LatestNotes />

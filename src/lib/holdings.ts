@@ -29,5 +29,27 @@ export const DISCLOSED_POSITION: DisclosedPosition = {
   fallbackAsOf: "2026-09-26",
 };
 
-/** Every ticker we keep a daily price for. */
-export const TRACKED_TICKERS = [DISCLOSED_POSITION.ticker];
+/**
+ * The standout holdings shown in the homepage carousel — the growth names from
+ * Daniel's portfolio that price impressively. Edit this list to change what the
+ * "Standouts" slider shows; each ticker prices itself daily from Yahoo Finance.
+ * Keep to clean US-listed symbols so the quote endpoint resolves them.
+ */
+export interface Standout {
+  ticker: string;
+  name: string;
+  /** One short line on why it's here — the thesis in a breath. */
+  note: string;
+}
+
+export const STANDOUTS: Standout[] = [
+  { ticker: "AMZN", name: "Amazon", note: "Cloud + retail flywheel; a core long-term hold." },
+  { ticker: "ASML", name: "ASML Holding", note: "The one company the whole AI-chip build depends on." },
+  { ticker: "MU", name: "Micron Technology", note: "Memory riding the AI-infrastructure wave." },
+  { ticker: "SMH", name: "VanEck Semiconductor ETF", note: "The whole semis basket, in one line." },
+];
+
+/** Every ticker we keep a daily price for (disclosed position + standouts). */
+export const TRACKED_TICKERS = Array.from(
+  new Set([DISCLOSED_POSITION.ticker, ...STANDOUTS.map((s) => s.ticker)]),
+);

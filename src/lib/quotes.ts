@@ -24,6 +24,8 @@ export interface Quote {
   previousClose: number | null;
   /** Trading day the price belongs to (YYYY-MM-DD, New York time). */
   asOf: string;
+  /** Percent change over the trailing ~year, or null when it can't be computed. */
+  yearChangePct: number | null;
   /** When we last fetched successfully (ISO timestamp). */
   fetchedAt: string;
   /** True when a refresh failed and this is the last good price. */
@@ -45,7 +47,7 @@ const TIMEOUT_MS = 6000;
 const endpoint = (ticker: string) =>
   `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(
     ticker,
-  )}?interval=1d&range=5d`;
+  )}?interval=1d&range=1y`;
 
 let memo: Record<string, Quote> | null = null;
 const inFlight = new Map<string, Promise<Quote | null>>();
@@ -115,6 +117,20 @@ async function fetchQuote(ticker: string): Promise<Quote | null> {
         ? meta.regularMarketTime
         : Math.floor(Date.now() / 1000);
 
+    // Trailing-year change: first finite close in the 1y series is the baseline.
+    const closes = json?.chart?.result?.[0]?.indicators?.quote?.[0]?.close;
+    let baseline: number | null = null;
+    if (Array.isArray(closes)) {
+      for (const c of closes) {
+        if (typeof c === "number" && Number.isFinite(c)) {
+          baseline = c;
+          break;
+        }
+      }
+    }
+    const yearChangePct =
+      baseline && baseline > 0 ? ((price - baseline) / baseline) * 100 : null;
+
     return {
       ticker,
       price,
@@ -124,6 +140,7 @@ async function fetchQuote(ticker: string): Promise<Quote | null> {
           ? meta.chartPreviousClose
           : null,
       asOf: marketDay(time),
+      yearChangePct,
       fetchedAt: new Date().toISOString(),
       stale: false,
     };
@@ -173,6 +190,16 @@ export async function getQuote(
   }
   lastFailure.set(ticker, Date.now());
   return cached ? { ...cached, stale: true } : null;
+}
+
+/**
+ * Current quotes for several tickers at once. Each goes through getQuote, so the
+ * per-ticker TTL, single-flight and cache all still apply. Nulls (tickers we've
+ * never priced) are dropped so callers get a clean list.
+ */
+export async function getQuotes(tickers: string[]): Promise<Quote[]> {
+  const results = await Promise.all(tickers.map((t) => getQuote(t)));
+  return results.filter((q): q is Quote => q !== null);
 }
 
 /**

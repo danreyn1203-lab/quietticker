@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Container } from "@/components/layout/Container";
 import { SignUpForm } from "@/components/SignUpForm";
@@ -70,7 +71,14 @@ export default async function SignUpPage() {
             Create your profile
           </h2>
           <p className="mt-1 text-sm text-ink-soft">
-            Takes about ten seconds.
+            Takes about ten seconds.{" "}
+            <Link
+              href="/signin"
+              className="font-medium text-ink underline decoration-line-strong underline-offset-2 hover:text-ink-soft"
+            >
+              Already have one? Sign in
+            </Link>
+            .
           </p>
           <SignUpForm className="mt-6" />
         </div>
