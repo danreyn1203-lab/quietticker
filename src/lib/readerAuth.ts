@@ -13,13 +13,18 @@ import { findReaderById, type Reader } from "@/lib/readers";
  * requires role "author". Nobody who signs up can reach the author's dashboard,
  * research editing, or subscriber list.
  *
- * There is no password yet (sign-up is first name + email), so this cookie is
- * a convenience: it remembers who someone is for their own profile page. It
- * deliberately gates nothing sensitive.
+ * Accounts have passwords (see src/lib/readers.ts), so this session cookie is a
+ * real credential: holding it means you proved the password and the emailed
+ * code. A separate short-lived PENDING cookie carries someone through the
+ * verification step before they have a full session.
  */
 
 export const READER_COOKIE = "reader_session";
 const MAX_AGE = 60 * 60 * 24 * 180; // 180 days — readers shouldn't have to re-enter
+
+/** The in-between cookie while someone is verifying their email. Short-lived. */
+export const READER_PENDING_COOKIE = "reader_pending";
+const PENDING_MAX_AGE = 60 * 30; // 30 minutes to enter the code
 
 function key(): string {
   const base =
@@ -40,6 +45,16 @@ function b64url(input: Buffer | string): string {
 
 function sign(payload: string): string {
   return b64url(createHmac("sha256", key()).update(payload).digest());
+}
+
+function pendingKey(): string {
+  const base =
+    process.env.AUTHOR_SESSION_SECRET || "dev-insecure-secret-change-me";
+  return `${base}|reader-pending-v1`;
+}
+
+function signPending(payload: string): string {
+  return b64url(createHmac("sha256", pendingKey()).update(payload).digest());
 }
 
 export function createReaderToken(readerId: string): string {
@@ -86,5 +101,55 @@ export function readerCookieOptions() {
     secure: process.env.NODE_ENV === "production",
     path: "/",
     maxAge: MAX_AGE,
+  };
+}
+
+// --- pending verification -------------------------------------------------
+
+export function createPendingToken(readerId: string): string {
+  const payload = b64url(
+    JSON.stringify({
+      role: "reader-pending",
+      id: readerId,
+      exp: Date.now() + PENDING_MAX_AGE * 1000,
+    }),
+  );
+  return `${payload}.${signPending(payload)}`;
+}
+
+function pendingIdFromToken(token: string | undefined): string | null {
+  if (!token) return null;
+  const [payload, sig] = token.split(".");
+  if (!payload || !sig) return null;
+  const a = Buffer.from(sig);
+  const b = Buffer.from(signPending(payload));
+  if (a.length !== b.length || !timingSafeEqual(a, b)) return null;
+  try {
+    const data = JSON.parse(
+      Buffer.from(payload.replace(/-/g, "+").replace(/_/g, "/"), "base64").toString(),
+    );
+    if (data.role !== "reader-pending") return null;
+    if (typeof data.exp !== "number" || data.exp <= Date.now()) return null;
+    return typeof data.id === "string" ? data.id : null;
+  } catch {
+    return null;
+  }
+}
+
+/** The reader currently mid-verification (from the pending cookie), or null. */
+export async function getPendingReader(): Promise<Reader | null> {
+  const store = await cookies();
+  const id = pendingIdFromToken(store.get(READER_PENDING_COOKIE)?.value);
+  if (!id) return null;
+  return findReaderById(id);
+}
+
+export function pendingCookieOptions() {
+  return {
+    httpOnly: true,
+    sameSite: "lax" as const,
+    secure: process.env.NODE_ENV === "production",
+    path: "/",
+    maxAge: PENDING_MAX_AGE,
   };
 }

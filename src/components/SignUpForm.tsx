@@ -8,14 +8,17 @@ const inputCls =
   "h-11 w-full rounded-md border border-line-strong bg-surface px-3 text-sm text-ink outline-none focus:border-brand";
 
 /**
- * Reader sign-up: first name + email, and that's the whole account.
- * Submitting also subscribes them to the research email — one step, no
- * checkbox to miss. On success they land on their own profile.
+ * Reader sign-up: first name, email, password. Submitting creates an
+ * unverified account and emails a 6-digit code; we then send them to /verify
+ * to enter it. The account is subscribed to the research email only once the
+ * code is confirmed (confirmed opt-in).
  */
 export function SignUpForm({ className }: { className?: string }) {
   const router = useRouter();
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [show, setShow] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -27,13 +30,11 @@ export function SignUpForm({ className }: { className?: string }) {
       const res = await fetch("/api/reader/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ firstName, email }),
+        body: JSON.stringify({ firstName, email, password }),
       });
       const data = await res.json();
       if (data.ok) {
-        // refresh() as well as push(): the session cookie just changed, and the
-        // refresh re-renders the shared layout so the header greets them at once.
-        router.push("/profile");
+        router.push("/verify");
         router.refresh();
         return;
       }
@@ -43,6 +44,8 @@ export function SignUpForm({ className }: { className?: string }) {
     }
     setBusy(false);
   }
+
+  const ready = firstName.trim() && email.trim() && password.length >= 8;
 
   return (
     <form onSubmit={submit} className={cn("w-full", className)} noValidate>
@@ -63,7 +66,7 @@ export function SignUpForm({ className }: { className?: string }) {
             className={cn(inputCls, "mt-2")}
           />
           <p className="mt-1.5 text-xs text-ink-muted">
-            This is what your profile is signed with — nothing else.
+            This is what your profile is signed with.
           </p>
         </div>
 
@@ -82,6 +85,37 @@ export function SignUpForm({ className }: { className?: string }) {
             placeholder="you@email.com"
             className={cn(inputCls, "mt-2")}
           />
+          <p className="mt-1.5 text-xs text-ink-muted">
+            We’ll send a 6-digit code here to confirm it’s really you.
+          </p>
+        </div>
+
+        <div>
+          <label htmlFor="signup-password" className="block text-sm font-medium text-ink">
+            Password
+          </label>
+          <div className="relative mt-2">
+            <input
+              id="signup-password"
+              name="password"
+              type={show ? "text" : "password"}
+              required
+              minLength={8}
+              autoComplete="new-password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="At least 8 characters"
+              className={cn(inputCls, "pr-16")}
+            />
+            <button
+              type="button"
+              onClick={() => setShow((v) => !v)}
+              className="absolute inset-y-0 right-0 px-3 text-xs font-medium text-ink-soft hover:text-ink"
+              aria-label={show ? "Hide password" : "Show password"}
+            >
+              {show ? "Hide" : "Show"}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -89,20 +123,18 @@ export function SignUpForm({ className }: { className?: string }) {
 
       <button
         type="submit"
-        disabled={busy || !firstName.trim() || !email.trim()}
+        disabled={busy || !ready}
         className={cn(
           "mt-5 inline-flex h-11 w-full items-center justify-center rounded-md bg-brand px-5 text-[0.95rem] font-medium text-on-brand transition-colors hover:bg-brand-hover",
-          (busy || !firstName.trim() || !email.trim()) &&
-            "cursor-not-allowed opacity-60",
+          (busy || !ready) && "cursor-not-allowed opacity-60",
         )}
       >
-        {busy ? "Setting you up…" : "Sign up & get the research"}
+        {busy ? "Sending your code…" : "Create account"}
       </button>
 
       <p className="mt-3 text-xs leading-relaxed text-ink-muted">
-        Signing up puts you on the research email — that&rsquo;s the point of
-        the account, so there&rsquo;s no extra box to tick. No password, no
-        tracking, unsubscribe whenever you like.
+        After you confirm the code, you’re on the research email — that’s the
+        point of the account. No spam, unsubscribe anytime.
       </p>
     </form>
   );

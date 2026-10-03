@@ -11,7 +11,7 @@ export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Sign up",
-  description: `Sign up for ${site.name} — a first name and an email is the whole account, and it puts you on the research email.`,
+  description: `Sign up for ${site.name} — name, email and a password, confirmed with a quick code, and you are on the research email.`,
   alternates: { canonical: "/signup" },
 };
 
@@ -35,9 +35,9 @@ export default async function SignUpPage() {
             Get the research as I publish it.
           </h1>
           <p className="mt-4 max-w-md text-[0.98rem] leading-relaxed text-ink-soft">
-            One form, one step: your name signs your profile, and your email
-            goes on the research list. That&rsquo;s the entire account —
-            there&rsquo;s nothing else to fill in and nothing to pay.
+            Name, email, and a password. We email you a 6-digit code to confirm
+            the address is really yours, and once you enter it you&rsquo;re on
+            the research list. Free, and nothing to pay.
           </p>
 
           <ul className="mt-8 space-y-3">
@@ -71,7 +71,7 @@ export default async function SignUpPage() {
             Create your profile
           </h2>
           <p className="mt-1 text-sm text-ink-soft">
-            Takes about ten seconds.{" "}
+            We&rsquo;ll email a code to confirm it&rsquo;s you.{" "}
             <Link
               href="/signin"
               className="font-medium text-ink underline decoration-line-strong underline-offset-2 hover:text-ink-soft"

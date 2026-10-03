@@ -48,18 +48,31 @@ user table. Saves `PUT` to `/api/articles/[slug]`, which writes the JSON file.
 ## Readers
 
 Anyone can read everything without an account. Signing up at `/signup` takes a
-first name and an email, and it does two things at once: it creates a reader
-profile and it subscribes that address — there is no separate newsletter
-checkbox to miss. Readers get `/profile`, which is signed with their first name
-as its logo and shows only their own name, email, join date and subscription.
-They can sign out, resubscribe, or delete the account (which unsubscribes them)
-from there.
+first name, an email, and a password. To prove the address is real, we email a
+6-digit code (over the same SMTP as the newsletter — see below); entering it at
+`/verify` confirms the account, signs them in, and subscribes that email
+(confirmed opt-in — an unconfirmed sign-up is never added to the list). Returning
+readers sign in with email + password at `/signin`. Readers get `/profile`,
+signed with their first name as its logo, showing only their own name, email,
+join date and subscription; they can sign out, resubscribe, or delete the
+account (which unsubscribes them).
 
-There is no reader password yet — the session cookie just remembers who someone
-is. That is deliberate: a reader session gates nothing. It is a different cookie
-from the author's, signed with a different key, and carries role `reader`, so it
-can never satisfy `isAuthor()`. Reader accounts live in
-`src/content/readers.json` (git-ignored) via `src/lib/readers.ts`.
+Passwords are hashed with **scrypt** (a per-account random salt) and only the
+hash is stored — never the password. The verification code is stored only as an
+HMAC, expires in 15 minutes, and burns after 5 wrong tries. Reader accounts live
+in `src/content/readers.json` (git-ignored) via `src/lib/readers.ts`; the store
+is local for now and moving it to a database later only touches that file.
+
+A reader session is a different cookie from the author's, signed with a different
+key, carrying role `reader`, so it can never satisfy `isAuthor()` — signing up
+gives no path to the author tools. If SMTP isn't configured, the code can't be
+emailed: it's printed to the server console (and returned by the API in
+development only) so local testing still works. Sign-in never reveals whether an
+email has an account (one generic error for wrong email or wrong password).
+
+> **Note:** this is not yet a password *reset* flow. Someone who forgets their
+> password can re-register the same (still-unverified) email, or — once a real
+> reset is wanted — that's the natural next step, which needs the same SMTP.
 
 ## Newsletter
 

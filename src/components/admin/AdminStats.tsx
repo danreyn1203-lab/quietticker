@@ -33,9 +33,13 @@ export function AdminStats({
           label="Signed-up readers"
           value={readers.total}
           caption={
-            readers.newestAt
-              ? `newest ${formatDateShort(readers.newestAt.slice(0, 10))}`
-              : "no sign-ups yet"
+            readers.total === 0
+              ? "no sign-ups yet"
+              : `${readers.verified} verified${
+                  readers.total > readers.verified
+                    ? ` · ${readers.total - readers.verified} pending`
+                    : ""
+                }`
           }
         />
         <Tile
@@ -170,6 +174,11 @@ export function AdminStats({
                   <span className="ml-2 break-all text-sm text-ink-soft">
                     {r.email}
                   </span>
+                  {!r.verified && (
+                    <span className="ml-2 rounded bg-warn-soft px-1.5 py-0.5 text-[0.65rem] font-medium uppercase tracking-wide text-warn">
+                      pending
+                    </span>
+                  )}
                 </div>
                 <span className="tnum shrink-0 text-xs text-ink-muted">
                   {formatDateShort(r.joinedAt.slice(0, 10))}
