@@ -60,8 +60,8 @@ export function FeaturedEditor({ initial }: { initial: Featured }) {
         <Row label="Exchange"><input className={inputCls} value={f.exchange} onChange={(e) => set("exchange", e.target.value)} /></Row>
         <Row label="Sector"><input className={inputCls} value={f.sector} onChange={(e) => set("sector", e.target.value)} /></Row>
         <Row label="Industry"><input className={inputCls} value={f.industry} onChange={(e) => set("industry", e.target.value)} /></Row>
-        <Row label="Price (number)"><input type="number" step="0.01" className={inputCls} value={f.price} onChange={(e) => set("price", parseFloat(e.target.value) || 0)} /></Row>
-        <Row label="Price note"><input className={inputCls} value={f.priceNote ?? ""} onChange={(e) => set("priceNote", e.target.value)} /></Row>
+        <Row label="Fallback price"><input type="number" step="0.01" className={inputCls} value={f.price} onChange={(e) => set("price", parseFloat(e.target.value) || 0)} /></Row>
+        <Row label="Fallback price note"><input className={inputCls} value={f.priceNote ?? ""} onChange={(e) => set("priceNote", e.target.value)} /></Row>
         <Row label="Tags (comma-separated)">
           <input
             className={inputCls}

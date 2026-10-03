@@ -4,10 +4,13 @@ import { createHmac, timingSafeEqual } from "crypto";
 
 /**
  * Minimal single-author auth. There is one author (the site owner). The
- * password and signing secret come from environment variables — never hard-code
- * secrets (§67). A signed, httpOnly cookie marks an authenticated session; the
- * secret never reaches the client. This is enough to gate editing on a
- * single-author research site; it is not a multi-user account system.
+ * email, password and signing secret come from environment variables — never
+ * hard-code secrets (§67). A signed, httpOnly cookie marks an authenticated
+ * session; the secret never reaches the client. This is enough to gate editing
+ * on a single-author research site; it is not a multi-user account system.
+ *
+ * To change the login, edit AUTHOR_EMAIL / AUTHOR_PASSWORD in .env.local and
+ * restart the server — the credentials live only there, never in the code.
  */
 
 export const SESSION_COOKIE = "author_session";
@@ -72,6 +75,19 @@ export function checkPassword(input: string): boolean {
   const a = Buffer.from(input);
   const b = Buffer.from(expected);
   return a.length === b.length && timingSafeEqual(a, b);
+}
+
+/**
+ * Check an email + password against the configured author credentials.
+ * The password is compared in constant time. The email is only a label (not a
+ * secret), so a plain case-insensitive match is fine; if AUTHOR_EMAIL isn't set
+ * the email step is skipped, so a password-only setup keeps working.
+ */
+export function checkCredentials(email: string, password: string): boolean {
+  if (!checkPassword(password)) return false;
+  const expectedEmail = process.env.AUTHOR_EMAIL;
+  if (!expectedEmail) return true; // no email configured → password alone
+  return email.trim().toLowerCase() === expectedEmail.trim().toLowerCase();
 }
 
 export function sessionCookieOptions() {

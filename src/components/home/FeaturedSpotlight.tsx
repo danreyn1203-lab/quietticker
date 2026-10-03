@@ -1,6 +1,7 @@
 import { getFeatured } from "@/lib/articles/featured";
 import { site } from "@/lib/site";
-import { formatPrice } from "@/lib/format";
+import { formatPrice, formatDate } from "@/lib/format";
+import { getQuote } from "@/lib/quotes";
 import { renderParagraphs, renderInline } from "@/lib/markdown";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
@@ -11,6 +12,16 @@ import { ArrowRight, Check } from "@/components/ui/icons";
 export async function FeaturedSpotlight() {
   const f = await getFeatured();
   if (!f) return null;
+
+  // Price is fetched live from Yahoo Finance (daily-cached) when the ticker
+  // resolves; otherwise we fall back to the price typed in /admin/featured, so
+  // the card is never blank — handy for thin OTC names Yahoo may not carry.
+  const quote = f.ticker ? await getQuote(f.ticker) : null;
+  const price = quote?.price ?? f.price;
+  const currency = quote?.currency ?? f.currency ?? "USD";
+  const priceNote = quote
+    ? `at the ${formatDate(quote.asOf)} close${quote.stale ? " · last update" : ""}`
+    : f.priceNote;
 
   const thesis = renderParagraphs(f.whyWatching);
 
@@ -42,10 +53,15 @@ export async function FeaturedSpotlight() {
               </div>
               <div className="text-right">
                 <div className="tnum text-2xl font-semibold text-ink">
-                  {formatPrice(f.price, f.currency)}
+                  {formatPrice(price, currency)}
                 </div>
-                {f.priceNote && (
-                  <p className="mt-0.5 text-xs text-ink-muted">{f.priceNote}</p>
+                {priceNote && (
+                  <p className="mt-0.5 text-xs text-ink-muted">{priceNote}</p>
+                )}
+                {quote && (
+                  <p className="mt-0.5 text-[0.7rem] text-ink-muted">
+                    Yahoo Finance · daily
+                  </p>
                 )}
               </div>
             </div>

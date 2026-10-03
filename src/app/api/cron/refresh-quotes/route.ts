@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { timingSafeEqual } from "crypto";
 import { isAuthor } from "@/lib/auth";
 import { TRACKED_TICKERS } from "@/lib/holdings";
+import { getFeatured } from "@/lib/articles/featured";
 import { refreshQuotes } from "@/lib/quotes";
 
 export const dynamic = "force-dynamic";
@@ -27,7 +28,15 @@ export async function GET(request: Request) {
     return NextResponse.json({ ok: false, error: "Not authorized" }, { status: 401 });
   }
 
-  const quotes = await refreshQuotes(TRACKED_TICKERS);
+  // The homepage spotlight ticker is editable, so pull it in at refresh time.
+  const featured = await getFeatured();
+  const tickers = Array.from(
+    new Set([
+      ...TRACKED_TICKERS,
+      ...(featured?.ticker ? [featured.ticker.toUpperCase()] : []),
+    ]),
+  );
+  const quotes = await refreshQuotes(tickers);
   return NextResponse.json({
     ok: true,
     refreshed: quotes.map((q) => ({
@@ -35,7 +44,7 @@ export async function GET(request: Request) {
       price: q.price,
       asOf: q.asOf,
     })),
-    failed: TRACKED_TICKERS.filter(
+    failed: tickers.filter(
       (t) => !quotes.some((q) => q.ticker === t.toUpperCase()),
     ),
   });

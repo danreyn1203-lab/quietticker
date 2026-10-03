@@ -18,6 +18,7 @@ export function AdminClient({
   stats?: ReactNode;
 }) {
   const router = useRouter();
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
@@ -30,10 +31,11 @@ export function AdminClient({
       const res = await fetch("/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ password }),
+        body: JSON.stringify({ email, password }),
       });
       const data = await res.json();
       if (data.ok) {
+        setEmail("");
         setPassword("");
         router.refresh();
       } else {
@@ -55,10 +57,25 @@ export function AdminClient({
     return (
       <form onSubmit={login} className="mt-10 max-w-sm">
         <label
-          htmlFor="author-password"
+          htmlFor="author-email"
           className="block text-sm font-medium text-ink"
         >
-          Author password
+          Email
+        </label>
+        <input
+          id="author-email"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          autoComplete="username"
+          className="mt-2 h-11 w-full rounded-md border border-line-strong bg-surface px-3 text-ink outline-none focus:border-brand"
+          placeholder="you@email.com"
+        />
+        <label
+          htmlFor="author-password"
+          className="mt-4 block text-sm font-medium text-ink"
+        >
+          Password
         </label>
         <input
           id="author-password"
@@ -72,10 +89,10 @@ export function AdminClient({
         {error && <p className="mt-2 text-sm text-neg">{error}</p>}
         <button
           type="submit"
-          disabled={busy || !password}
+          disabled={busy || !email || !password}
           className={cn(
             "mt-4 inline-flex h-11 items-center justify-center rounded-md bg-brand px-5 text-[0.95rem] font-medium text-on-brand transition-colors hover:bg-brand-hover",
-            (busy || !password) && "cursor-not-allowed opacity-60",
+            (busy || !email || !password) && "cursor-not-allowed opacity-60",
           )}
         >
           {busy ? "Signing in…" : "Sign in"}

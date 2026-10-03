@@ -1,15 +1,17 @@
 import { NextResponse } from "next/server";
 import {
   SESSION_COOKIE,
-  checkPassword,
+  checkCredentials,
   createToken,
   sessionCookieOptions,
 } from "@/lib/auth";
 
 export async function POST(request: Request) {
+  let email = "";
   let password = "";
   try {
     const body = await request.json();
+    email = typeof body?.email === "string" ? body.email : "";
     password = typeof body?.password === "string" ? body.password : "";
   } catch {
     return NextResponse.json({ ok: false, error: "Bad request" }, { status: 400 });
@@ -22,9 +24,9 @@ export async function POST(request: Request) {
     );
   }
 
-  if (!checkPassword(password)) {
+  if (!checkCredentials(email, password)) {
     return NextResponse.json(
-      { ok: false, error: "Incorrect password." },
+      { ok: false, error: "Incorrect email or password." },
       { status: 401 },
     );
   }
